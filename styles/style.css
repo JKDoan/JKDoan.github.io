@@ -251,17 +251,17 @@ body #scroll-indicator #mouse #mousewheel {
     opacity: 0;
   }
 }
-body #projecten #deliverableHeader {
+body #deliverables #deliverableHeader {
   color: #754741;
   font-weight: 700;
   font-size: 50px;
 }
 @media only screen and (max-width: 390px) {
-  body #projecten #deliverableHeader {
+  body #deliverables #deliverableHeader {
     font-size: 30px;
   }
 }
-body #projecten .firstRow {
+body #deliverables .firstRow {
   height: -moz-min-content;
   height: min-content;
   margin-bottom: 20px;
@@ -269,14 +269,14 @@ body #projecten .firstRow {
   justify-content: space-between;
 }
 @media only screen and (max-width: 800px) {
-  body #projecten .firstRow {
+  body #deliverables .firstRow {
     display: inline-block;
     justify-content: center;
     margin-bottom: 10px;
   }
 }
-body #projecten .firstRow #firstDeli,
-body #projecten .firstRow #secondDeli {
+body #deliverables .firstRow #firstDeli,
+body #deliverables .firstRow #secondDeli {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
   width: 45%;
@@ -288,26 +288,26 @@ body #projecten .firstRow #secondDeli {
   border-radius: 5px;
   transition: transform 0.2s;
 }
-body #projecten .firstRow #firstDeli:hover,
-body #projecten .firstRow #secondDeli:hover {
+body #deliverables .firstRow #firstDeli:hover,
+body #deliverables .firstRow #secondDeli:hover {
   transform: scale(1.01);
 }
 @media only screen and (max-width: 800px) {
-  body #projecten .firstRow #firstDeli,
-  body #projecten .firstRow #secondDeli {
+  body #deliverables .firstRow #firstDeli,
+  body #deliverables .firstRow #secondDeli {
     width: 100%;
     margin-top: 10px;
   }
 }
-body #projecten .firstRow #firstDeli .image,
-body #projecten .firstRow #secondDeli .image {
+body #deliverables .firstRow #firstDeli .image,
+body #deliverables .firstRow #secondDeli .image {
   border-radius: 5px;
 }
-body #projecten a {
+body #deliverables a {
   text-decoration: none;
   color: black;
 }
-body #projecten .titleDeli {
+body #deliverables .titleDeli {
   color: #754741;
   font-weight: 700;
   font-size: 20px;
