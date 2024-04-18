@@ -251,17 +251,17 @@ body #scroll-indicator #mouse #mousewheel {
     opacity: 0;
   }
 }
-body #deliverables #deliverableHeader {
+body #projecten #deliverableHeader {
   color: #754741;
   font-weight: 700;
   font-size: 50px;
 }
 @media only screen and (max-width: 390px) {
-  body #deliverables #deliverableHeader {
+  body #projecten #deliverableHeader {
     font-size: 30px;
   }
 }
-body #deliverables .firstRow {
+body #projecten .firstRow {
   height: -moz-min-content;
   height: min-content;
   margin-bottom: 20px;
@@ -269,14 +269,14 @@ body #deliverables .firstRow {
   justify-content: space-between;
 }
 @media only screen and (max-width: 800px) {
-  body #deliverables .firstRow {
+  body #projecten .firstRow {
     display: inline-block;
     justify-content: center;
     margin-bottom: 10px;
   }
 }
-body #deliverables .firstRow #firstDeli,
-body #deliverables .firstRow #secondDeli {
+body #projecten .firstRow #firstDeli,
+body #projecten .firstRow #secondDeli {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
   width: 45%;
@@ -288,26 +288,26 @@ body #deliverables .firstRow #secondDeli {
   border-radius: 5px;
   transition: transform 0.2s;
 }
-body #deliverables .firstRow #firstDeli:hover,
-body #deliverables .firstRow #secondDeli:hover {
+body #projecten .firstRow #firstDeli:hover,
+body #projecten .firstRow #secondDeli:hover {
   transform: scale(1.01);
 }
 @media only screen and (max-width: 800px) {
-  body #deliverables .firstRow #firstDeli,
-  body #deliverables .firstRow #secondDeli {
+  body #projecten .firstRow #firstDeli,
+  body #projecten .firstRow #secondDeli {
     width: 100%;
     margin-top: 10px;
   }
 }
-body #deliverables .firstRow #firstDeli .image,
-body #deliverables .firstRow #secondDeli .image {
+body #projecten .firstRow #firstDeli .image,
+body #projecten .firstRow #secondDeli .image {
   border-radius: 5px;
 }
-body #deliverables a {
+body #projecten a {
   text-decoration: none;
   color: black;
 }
-body #deliverables .titleDeli {
+body #projecten .titleDeli {
   color: #754741;
   font-weight: 700;
   font-size: 20px;
