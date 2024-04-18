@@ -17,6 +17,7 @@ html {
   background-color: #fffceb;
   font-family: "Calibri";
   padding-bottom: 40px;
+  scroll-behavior: smooth;
   cursor: none;
 }
 html p {
