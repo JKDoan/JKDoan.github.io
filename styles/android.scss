@@ -53,6 +53,9 @@ body {
     pointer-events: none;
     z-index: 10000;
     display: none;
+    @media (hover: none), (hover: on-demand) {
+      visibility: hidden;
+    }
   }
 
   #hamburgerMenu {

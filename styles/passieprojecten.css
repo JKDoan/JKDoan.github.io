@@ -56,6 +56,11 @@ body .cursor {
   z-index: 10000;
   display: none;
 }
+@media (hover: none), (hover: on-demand) {
+  body .cursor {
+    visibility: hidden;
+  }
+}
 body #hamburgerMenu {
   display: none;
   list-style-type: none;
