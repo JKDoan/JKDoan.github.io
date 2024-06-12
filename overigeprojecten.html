@@ -1,95 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
-    <meta charset="utf-8" />
-    <title>Overige projecten</title>
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overige projecten - Jenny Kim Doan</title>
 
-    <link href="styles/passieprojecten.css" rel="stylesheet" />
+    <link href="styles/template.scss" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="cursor"></div>
+    <div class="grid-container">
+      <div class="part" id="header">
+        <a href="index">Jenny Kim Doan</a>
+      </div>
 
-    <div id="hamburgerMenu">
-      <span id="close">&times;</span>
-      <a href="./"><li id="homeMenu">Home</li></a>
-      <a href="./#deliverables"><li id="deliMenu">Projecten</li></a>
+      <div class="part" id="projectname">
+        <p id="title">Overige projecten</p>
+      </div>
+      <div class="part" id="content">
+        <p class="header">AI bootleg knuffel identificatie</p>
+        <p class="text">
+          Naast mijn studie ICT & Media heb ik ook een minor gevolgd in
+          Artificial Intelligence, waarbij ik ook werkte aan het bouwen van AI
+          applicaties. Een van mijn persoonlijke projecten was het ontwikkelen
+          van een AI-bot geprogrammeerd in Python, die het onderscheid kon maken
+          tussen authentieke en nagemaakte knuffels van enkele personages van
+          Sanrio met behulp van datasets.
+        </p>
+
+        <p class="text">
+          Ik begon met het verzamelen van afbeeldingen uit verschillende
+          shopping sites met behulp van imagescraping om mijn datasets te
+          bouwen. De dataset bestaat uit twee aparte datasets: authentiek/
+          bootleg knuffels, en personages. De meeste foto's van authentieke
+          knuffels bevatte een witte achtergrond, terwijl foto's van bootleg
+          knuffels vaan een achtergrond omgeving bevatte. Hierdoor was de AI
+          meer vatbaar om een afbeelding met een achtergrond als een bootleg te
+          stellen en vice versa. <br />
+          Om de resultaten zo betrouwbaar mogelijk te houden schreef ik extra
+          Python-scripts om de achtergrond te veranderen naar een transparant
+          waardoor er alleen de knuffel overbleef.
+        </p>
+
+        <img class="image" src="/images/passie/showcase.png" />
+
+        <p class="text">
+          Gebruikers van de AI kunnen hun eigen afbeelding doorgeven aan de
+          model en snel de uitslag krijgen.
+        </p>
+
+        <img class="image" src="/images/passie/results2.png" />
+
+        <p class="text">
+          Voor deze project heb ik positieve feedback gekregen van de docenten
+          vanwege de unieke concept, mijn onderzoek op de bootleg knuffel
+          industrie, en de AI model met datasets. Mijn inzet voor mijn project
+          en semester was boven gemiddeld beoordeld en was successvol geslaagd.
+        </p>
+
+        <a href="https://github.com/JKDoan/Authentic-bootleg-plush-identifier" target="_blank">
+          <button class="nav">Github repository</button>
+        </a>
+      </div>
+
+      <div class="part" id="links">
+        <p id="projecttext">Andere projecten</p>
+        <div id="projects">
+          <a href="android">
+            <div class="project1">
+              <img class="image" src="images/stage.png" />
+              <p>Stageproject</p>
+            </div>
+          </a>
+          <a href="international.html">
+            <div class="project2">
+              <img class="image" src="images/internationaal.png" />
+              <p>Internationaal project</p>
+            </div>
+          </a>
+          <a href="vaardigheden">
+            <div class="project3">
+              <img class="image" src="images/ontwikkeling.png" />
+              <p>Mijn vaardigheden</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div id="transparant"></div>
-
-    <button id="showMenu">
-      <img src="images/hamburgermenu.png" width="70px" />
-    </button>
-
-    <ul>
-      <li><a href="./">Jenny Kim Doan</a></li>
-      <li id="deli"><a href="./#deliverables">Projecten</a></li>
-      <li id="home"><a href="./">Home</a></li>
-    </ul>
-
-    <p id="title">Overige projecten</p>
-
-    <p class="subheader">AI bootleg knuffel identificatie</p>
-
-    <p>
-      Naast mijn studie ICT & Media heb ik ook een minor gevolgd in Artificial
-      Intelligence, waarbij ik ook werkte aan het bouwen van AI applicaties. Een
-      van mijn persoonlijke projecten was het ontwikkelen van een AI-bot
-      geprogrammeerd in Python, die het onderscheid kon maken tussen authentieke
-      en nagemaakte knuffels van enkele personages van Sanrio met behulp van
-      datasets.
-    </p>
-
-    <p>
-      Ik begon met het verzamelen van afbeeldingen uit verschillende shopping
-      sites met behulp van imagescraping om mijn datasets te bouwen. De dataset
-      bestaat uit twee aparte datasets: authentiek/ bootleg knuffels, en
-      personages. De meeste foto's van authentieke knuffels bevatte een witte
-      achtergrond, terwijl foto's van bootleg knuffels vaan een achtergrond
-      omgeving bevatte. Hierdoor was de AI meer vatbaar om een afbeelding met
-      een achtergrond als een bootleg te stellen en vice versa. <br />
-      Om de resultaten zo betrouwbaar mogelijk te houden schreef ik extra
-      Python-scripts om de achtergrond te veranderen naar een transparant
-      waardoor er alleen de knuffel overbleef.
-    </p>
-    <img class="img" src="/images/passie/showcase.png" />
-
-    <p>
-      Gebruikers van de AI kunnen hun eigen afbeelding doorgeven aan de model en
-      snel de uitslag krijgen.
-    </p>
-    <img class="img" style="width: 50%" src="/images/passie/results2.png" />
-
-
-
-    <p>
-      Voor deze project heb ik positieve feedback gekregen van de docenten
-      vanwege de unieke concept, mijn onderzoek op de bootleg knuffel industrie,
-      en de AI model met datasets. Mijn inzet voor mijn project en semester was
-      boven gemiddeld beoordeld en was successvol geslaagd.
-    </p>
-
-    <a href="https://github.com/JKDoan/Authentic-bootleg-plush-identifier" target="_blank">
-      <button class="nav">Github repository</button>
-    </a>
-
-    <br>
-    <br>
-    <br>
-
-
-    <a href="./international">
-      <button class="nav">← Digitale tafel voor de LOT-gemeenschap</button>
-    </a>
-
-    <a class="right" href="./vaardigheden">
-      <button class="nav">Ontwikkeling en vaardigheden →</button>
-    </a>
-
-    <script src="js/script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>

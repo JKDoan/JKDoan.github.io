@@ -1,169 +1,81 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="utf-8" />
-    <title>Hi!</title>
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenny Kim Doan</title>
 
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/style.scss" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="cursor"></div>
-
-    <div id="hamburgerMenu">
-      <span id="close">&times;</span>
-      <a href="./"><li id="homeMenu">Home</li></a>
-      <a href="./#deliverables"><li id="deliMenu">Projecten</li></a>
-    </div>
-
-    <div id="transparant"></div>
-
-    <button id="showMenu">
-      <img src="images/hamburgermenu.png" width="70px" />
-    </button>
-
-    <ul>
-      <li><a href="./">Jenny Kim Doan</a></li>
-      <li id="deli"><a href="./#deliverables">Projecten</a></li>
-      <li id="home"><a href="./">Home</a></li>
-    </ul>
-
-    <div id="landing">
-      <div id="intro">
-        <p id="headertext">Jenny Kim Doan</p>
-        <p id="description">
-          Passie voor ontwerpen en creeëren sinds mijn peuterjaren.
+    <div class="grid-container">
+      <div class="part" id="header">Jenny Kim Doan</div>
+      <div class="part" id="intro">
+        <p id="title">
+          De gemiddelde gebruiker let slechts 8 seconden op een website*
         </p>
-      </div>
-    </div>
+        <p id="subtitle">Laten we ze voor uw hele website behouden.</p>
+        <p class="text">
+          Ik ben Jenny Kim Doan, een 23-jarige studente uit Tilburg. Ik studeer
+          momenteel aan Fontys Hogescholen in Eindhoven als een ICT-studente. In
+          mijn vrije tijd doe ik graag aan games, tekenen, en shopping.
+        </p>
+        <p class="text">
+          Mijn specialisatie ligt in front-end webdevelopment, vooral met HTML,
+          SCSS, en JavaScript. Door de loop van mijn studie heb ik ook diverse
+          vaardigheden geleerd o.a. React, Android, AI, etc. Ik kijk er naar uit
+          om je te ontmoeten!
+        </p>
 
-    <div id="scroll-indicator">
-      <a href="./#deliverables">
-        <div id="mouse">
-          <div id="mousewheel"></div>
-        </div>
-      </a>
-    </div>
-
-    <div id="deliverables">
-      <p id="deliverableHeader">Projecten</p>
-
-      <div id="listDeliverables">
-        <div class="firstRow">
-          <div id="firstDeli">
-            <a href="android">
-              <img
-                class="image"
-                src="images/stage.png"
-                height="80%"
-                width="100%"
-              />
-
-              <p class="titleDeli" id="firstDeliTitle">
-                Front-end van Android app voor stage
-              </p>
-              <p id="firstDeliDesc">
-                Front-end van de Android-versie van een app voor stage
-              </p>
-            </a>
-          </div>
-
-          <div id="firstDeli">
-            <a href="international">
-              <img
-                class="image"
-                src="images/portfolio.png"
-                height="80%"
-                width="100%"
-              />
-
-              <p class="titleDeli" id="firstDeliTitle">
-                Digitale tafel voor de LOT-gemeenschap
-              </p>
-              <p id="firstDeliDesc">Internationale project van Fontys</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="firstRow">
-          <div id="secondDeli">
-            <a href="overigeprojecten">
-              <img
-                class="image"
-                src="images/passie.png"
-                height="80%"
-                width="100%"
-              />
-
-              <p class="titleDeli" id="secondDeliTitle">Overige projecten</p>
-              <p id="secondDeliDesc">
-                Andere, kleinere projecten waaraan ik ook werkte
-              </p>
-            </a>
-          </div>
-
-          <div id="secondDeli">
-            <a href="vaardigheden">
-              <img
-                class="image"
-                src="images/ontwikkeling.png"
-                height="80%"
-                width="100%"
-              />
-
-              <p class="titleDeli" id="secondDeliTitle">
-                Ontwikkeling en vaardigheden
-              </p>
-              <p id="secondDeliDesc">
-                Vaardigheden die ik heb opgebouwd over de aantal jaren
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="overmij">
-      <div>
-        <img src="images/me.png" id="picofme" />
-      </div>
-
-      <div id="descofme">
-        <p id="overmijtext">Over mij</p>
-        <div id="desc">
-          <p>
-            Hi! Mijn naam is Jenny Kim Doan, 23 jaar en woon sinds vorig jaar in
-            Tilburg.
-          </p>
-          <p>
-            Ik studeer ICT & Media op Fontys in Eindhoven sinds 2021, en streef
-            ernaar om een front-end webdeveloper te worden. Daarom heb ik deze
-            portfolio ook zelf ontworpen en gebouwd! Ik ben natuurlijk altijd
-            bereid om nieuwe dingen uit te proberen en mijn huideige
-            vaardigheden nog verder te verbeteren. Naast mijn studie heb ik ook
-            enkele projecten buiten school die met codering te maken hebben.
-            Mijn hobby's zijn voornamelijk gamen en tekenen. Ik kijk ernaar uit
-            om kennis te maken!
-          </p>
-
-          <a href="https://www.linkedin.com/in/jkdoan/" target="_blank">
-            <img class="socials" src="images/linkedin.png" />
+        <div id="links">
+          <a href="https://www.remywiki.com/">
+            <img class="social" src="images/linkedin.png" />
           </a>
 
-          <a href="mailto:jennykimdoan@gmail.com">
-            <img class="socials" src="images/mail.png" />
+          <a href="https://www.remywiki.com/">
+            <img class="social" src="images/mail.png" />
           </a>
 
-          <a href="documents/cv.pdf" target="_blank">
-            <img class="socials" src="images/cv.png" />
+          <a href="https://www.remywiki.com/">
+            <img class="social" src="images/cv.png" />
+          </a>
+
+          <a href="https://www.remywiki.com/">
+            <img class="social" src="images/github.png" />
+          </a>
+        </div>
+      </div>
+      <div class="part" id="projects">
+        <div>
+          <a href="android">
+          <div class="project" id="stage">
+            <img class="image" src="images/stage.png" />
+            <p>Stageproject</p>
+          </div>
+        </a>
+          <a href="international">
+          <div class="project" id="internationaal">
+            <img class="image" src="images/internationaal.png" />
+            <p>Internationaal project</p>
+          </div>
+        </a>
+          <a href="overigeprojecten">
+            <div class="project" id="overige">
+              <img class="image" src="images/overige.png" />
+              <p>Overige projecten</p>
+            </div>
+          </a>
+          <a href="vaardigheden">
+            <div class="project" id="vaardigheden">
+              <img class="image" src="images/ontwikkeling.png" />
+              <p>Mijn vaardigheden</p>
+            </div>
           </a>
         </div>
       </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
