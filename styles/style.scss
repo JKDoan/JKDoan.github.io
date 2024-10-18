@@ -1,6 +1,6 @@
 @import "./_variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 ::-webkit-scrollbar {
   width: 14px;
@@ -18,7 +18,8 @@
 }
 
 html {
-  height: 100%;
+  height: max-content;
+  overflow: hidden;
   background: conic-gradient(
       from 41deg at 65% 74%,
       #ff000008 0%,
@@ -31,6 +32,10 @@ html {
     linear-gradient(to top left, #ffc98fff 0%, #0000ff00 70%),
     linear-gradient(to top, #ffffffff 0%, #ffffffff 100%);
 
+    @media only screen and (max-width: 1320px) {
+      overflow: auto;
+    }
+
   a {
     text-decoration: none;
     color: black;
@@ -38,11 +43,10 @@ html {
 }
 
 body {
-
-svg {
-  width: 200px;
-  height: 200px;
-}
+  svg {
+    width: 200px;
+    height: 200px;
+  }
 
   .grid-container {
     display: grid;
@@ -57,6 +61,13 @@ svg {
     margin-left: 40px;
     margin-right: 40px;
 
+    @media only screen and (max-width: 1320px) {
+      grid-template-areas:
+        "header header header header header header"
+        "info info info info info info"
+        "projects projects projects projects projects projects";
+    }
+
     div {
       padding: 20px 0;
     }
@@ -64,7 +75,7 @@ svg {
     #header {
       grid-area: header;
       font-family: "Alegreya";
-      color: white;
+      color: rgb(0, 0, 0);
       font-weight: 700;
       text-align: center;
       font-size: 53px;
@@ -74,14 +85,18 @@ svg {
       height: 500px;
       display: inline-block;
 
-      #title{
+      @media only screen and (max-width: 1320px) {
+        height: max-content;
+      }
+
+      #title {
         font-family: "Alegreya";
-        font-size: 46px;
-        font-weight: 600;
+        font-size: 42px;
+        font-weight: 500;
         margin: 0;
       }
 
-      #subtitle{
+      #subtitle {
         font-family: "Alegreya";
         font-size: 30px;
         font-weight: 400;
@@ -89,15 +104,15 @@ svg {
         margin: 0;
       }
 
-      .text{
+      .text {
         font-family: "Inter";
         font-size: 16px;
       }
 
-      #links{
+      #links {
         display: inline-block;
 
-        .social{
+        .social {
           width: 40px;
           margin-right: 10px;
         }
@@ -114,9 +129,10 @@ svg {
       text-align: center;
       font-family: "Alegreya";
 
-      .project{
+
+      .project {
         min-width: 250px;
-        min-height: 250px;;
+        min-height: 250px;
         display: inline-block;
         margin: 7px;
 
@@ -124,7 +140,7 @@ svg {
         padding: 0;
         cursor: pointer;
 
-        p{
+        p {
           font-size: 20px;
           font-weight: 600;
           margin-top: 6px;
@@ -133,7 +149,7 @@ svg {
           text-align: start;
         }
 
-        .image{
+        .image {
           width: auto;
           height: 200px;
         }

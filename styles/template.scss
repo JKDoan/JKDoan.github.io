@@ -37,8 +37,32 @@ body {
     grid-auto-columns: minmax(0, 1fr); //auto size the columns in equal size
     grid-auto-flow: column;
 
+    @media only screen and (max-width: 950px) {
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
+
     div {
       padding: 20px 0;
+    }
+
+    .nav{
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin: 10px;
+      height: 50px;
+      width: 150px;
+      cursor: pointer;
+      font-family: "Alegreya";
+      font-size: 17px;
+      border-style: solid;
+      border-color: rgb(80, 200, 255);
+
+    }
+
+    
+    .nav:hover{
+      background-color: #c1f6ff;
     }
 
     #header {
