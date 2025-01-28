@@ -84,6 +84,33 @@ body .grid-container #content .image {
   max-height: 100%;
   max-width: 100%;
 }
+body .grid-container #content .horizontal {
+  content: "";
+  clear: both;
+  display: table;
+}
+body .grid-container #content .horizontal #me {
+  float: left;
+  width: 200px;
+}
+@media screen and (max-width: 1200px) {
+  body .grid-container #content .horizontal {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  body .grid-container #content .horizontal #me {
+    float: none;
+    width: 200px;
+  }
+}
+body .grid-container #content #links {
+  display: inline-block;
+}
+body .grid-container #content #links .social {
+  width: 60px;
+  margin-right: 10px;
+}
 body .grid-container #links {
   grid-area: links;
   font-family: "Alegreya";

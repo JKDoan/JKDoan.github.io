@@ -110,8 +110,40 @@ body {
         max-height: 100%;
         max-width: 100%;
       }
+
+      .horizontal{
+        content: "";
+        clear: both;
+        display: table;
+        #me{
+          float: left;
+          width: 200px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        .horizontal{
+          content: "";
+          clear: both;
+          display: table;
+          #me{
+            float: none;
+            width: 200px;
+          }
+        }
+     }
+
+     #links {
+      display: inline-block;
+
+      .social {
+        width: 60px;
+        margin-right: 10px;
+      }
+    }
     }
 
+    //links to other projects
     #links {
       grid-area: links;
       font-family: "Alegreya";
