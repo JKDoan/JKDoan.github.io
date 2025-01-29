@@ -22,6 +22,10 @@ html {
 }
 
 body {
+  @media only screen and (max-width: 600px) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
   .grid-container {
     display: grid;
     grid-template-areas:

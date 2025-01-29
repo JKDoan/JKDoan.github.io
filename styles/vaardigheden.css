@@ -9,6 +9,12 @@ html a {
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
 body .grid-container {
   display: grid;
   grid-template-areas: "header header header header header header" "projectname projectname projectname projectname projectname projectname" "content content content content content content" "links links links links links links";

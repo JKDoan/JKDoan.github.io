@@ -117,34 +117,70 @@ body .grid-container #links #projects {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "project1 project2 project3";
   justify-items: center;
-  grid-auto-flow: row;
+  grid-auto-flow: column;
   gap: 10px;
+  overflow: hidden;
 }
-body .grid-container #links #projects a {
-  overflow: auto;
+@media screen and (max-width: 600px) {
+  body .grid-container #links #projects {
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-areas: "project1" "project2" "project3";
+  }
 }
-body .grid-container #links #projects a .project1,
-body .grid-container #links #projects a .project2,
-body .grid-container #links #projects a .project3 {
+body .grid-container #links #projects .project1 {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0;
-  padding-bottom: 3px;
   cursor: pointer;
   background-color: white;
+  padding-bottom: 1vh;
 }
-body .grid-container #links #projects a .project1 p,
-body .grid-container #links #projects a .project2 p,
-body .grid-container #links #projects a .project3 p {
+body .grid-container #links #projects .project1 p {
   font-size: 20px;
   font-weight: 600;
   margin-top: 6px;
   margin-bottom: 12px;
   margin-left: 8px;
 }
-body .grid-container #links #projects a .project1 .image,
-body .grid-container #links #projects a .project2 .image,
-body .grid-container #links #projects a .project3 .image {
+body .grid-container #links #projects .project1 .image {
+  max-height: 100%;
+  max-width: 100%;
+}
+body .grid-container #links #projects .project2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  cursor: pointer;
+  background-color: white;
+  padding-bottom: 1vh;
+}
+body .grid-container #links #projects .project2 p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+}
+body .grid-container #links #projects .project2 .image {
+  max-height: 100%;
+  max-width: 100%;
+}
+body .grid-container #links #projects .project3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  cursor: pointer;
+  background-color: white;
+  padding-bottom: 1vh;
+}
+body .grid-container #links #projects .project3 p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+}
+body .grid-container #links #projects .project3 .image {
   max-height: 100%;
   max-width: 100%;
 }/*# sourceMappingURL=template.css.map */
