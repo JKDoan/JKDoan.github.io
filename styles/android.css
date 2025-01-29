@@ -9,6 +9,10 @@ html a {
   color: black;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 @media only screen and (max-width: 600px) {
   body {
     padding: 0 !important;
@@ -19,6 +23,7 @@ body .grid-container {
   display: grid;
   grid-template-areas: "header header header header header header" "projectname projectname projectname projectname projectname projectname" "content content content content content content" "links links links links links links";
   gap: 10px;
+  padding: 5px;
   margin-left: 18vw;
   margin-right: 18vw;
   grid-auto-columns: minmax(0, 1fr);
@@ -26,8 +31,8 @@ body .grid-container {
 }
 @media only screen and (max-width: 950px) {
   body .grid-container {
-    padding: 0 !important;
-    margin: 0 !important;
+    margin-left: 0vw;
+    margin-right: 0vw;
   }
 }
 body .grid-container div {
@@ -62,18 +67,12 @@ body .grid-container #projectname #time {
 body .grid-container #content {
   grid-area: content;
   color: rgb(0, 0, 0);
-  text-align: center;
+  text-align: left;
   background-color: white;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 20px;
+  padding-top: 26px;
   padding-bottom: 26px;
-}
-@media only screen and (max-width: 950px) {
-  body .grid-container #content {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
 }
 body .grid-container #content .header {
   font-size: 40px;
@@ -95,10 +94,24 @@ body .grid-container #content .image {
   max-height: 100%;
   max-width: 100%;
 }
-@media only screen and (max-width: 950px) {
-  body .grid-container #content .image {
-    margin: 0px;
-    margin: 0px;
+body .grid-container #content .horizontal {
+  content: "";
+  clear: both;
+  display: table;
+}
+body .grid-container #content .horizontal #me {
+  float: left;
+  width: 200px;
+}
+@media screen and (max-width: 1200px) {
+  body .grid-container #content .horizontal {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  body .grid-container #content .horizontal #me {
+    float: none;
+    width: 200px;
   }
 }
 body .grid-container #content #links {

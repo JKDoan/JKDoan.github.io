@@ -22,6 +22,8 @@ html {
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   @media only screen and (max-width: 600px) {
     padding: 0 !important;
     margin: 0 !important;
@@ -169,26 +171,36 @@ body {
         justify-items: center;
         grid-auto-flow: column;
         gap: 10px;
+        overflow: hidden;
+
+        @media screen and (max-width: 600px) {
+          grid-template-columns: repeat(1, 3fr);
+          grid-template-areas:
+            "project1"
+            "project2"
+            "project3";
+        }
 
         .project1 {
-            width: -moz-fit-content;
-            width: fit-content;
-            padding: 0;
-            cursor: pointer;
-            background-color: white;
-  
-            p {
-              font-size: 20px;
-              font-weight: 600;
-              margin-top: 6px;
-              margin-bottom: 12px;
-              margin-left: 8px;
-            }
-  
-            .image {
-              max-height: 100%;
-              max-width: 100%;
-            }
+          width: -moz-fit-content;
+          width: fit-content;
+          padding: 0;
+          cursor: pointer;
+          background-color: white;
+          padding-bottom: 1vh;
+
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            margin-left: 8px;
+          }
+
+          .image {
+            max-height: 100%;
+            max-width: 100%;
+          }
         }
 
         .project2 {
@@ -197,6 +209,7 @@ body {
           padding: 0;
           cursor: pointer;
           background-color: white;
+          padding-bottom: 1vh;
 
           p {
             font-size: 20px;
@@ -218,6 +231,7 @@ body {
           padding: 0;
           cursor: pointer;
           background-color: white;
+          padding-bottom: 1vh;
 
           p {
             font-size: 20px;
