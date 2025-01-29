@@ -44,6 +44,11 @@ html {
 
 body {
   width: 100vw;
+  overflow-x: hidden;
+  @media only screen and (max-width: 600px) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
   .grid-container {
     display: grid;
     grid-template-areas:
@@ -53,7 +58,7 @@ body {
 
     grid-auto-columns: 1fr 2fr 2fr;
     grid-auto-flow: column;
-    padding: 5px;
+
     margin-left: 40px;
     margin-right: 40px;
 
