@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   @media only screen and (max-width: 950px) {
     padding: 0 !important;
@@ -44,8 +44,8 @@ body {
     text-align: center;
 
     @media only screen and (max-width: 950px) {
-      margin-left: 0vw;
-      margin-right: 0vw;
+      margin-left: 1vw;
+      margin-right: 1vw;
     }
 
     div {
@@ -85,11 +85,15 @@ body {
 
     #content {
       grid-area: content;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       text-align: left;
-      background-color: white;
+      background-color: rgb(30, 30, 30);
       padding-left: 40px;
       padding-right: 40px;
+
+      border-style: solid;
+      border-color: white;
+      border-width: 18px;
 
       padding-top: 26px;
       padding-bottom: 26px;
@@ -108,7 +112,8 @@ body {
         font-family: "Inter";
         padding: 0;
         margin: 0;
-        margin-top: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
       }
 
       .image {
@@ -126,16 +131,15 @@ body {
         }
       }
 
-      @media screen and (max-width: 1200px) {
-        .horizontal{
-          content: "";
-          clear: both;
-          display: table;
-          #me{
-            float: none;
-            width: 200px;
-          }
-        }
+      @media screen and (max-width: 950px) {
+        border-style: none;
+        border-width: 0;
+
+        padding-left: 5px;
+        padding-right: 5px;
+  
+        padding-top: 0px;
+        padding-bottom: 0px;
      }
 
      #links {
