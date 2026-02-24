@@ -42,6 +42,67 @@ body {
     margin: 0 !important;
   }
 }
+body .popup {
+  background-color: #fffcf9;
+  padding: 10px;
+  position: absolute;
+  border-radius: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 350px;
+  border: 3px solid #cb4d79;
+  font-family: "Be Vietnam Pro";
+  right: 10px;
+  overflow: hidden;
+  animation: fadeInUp 1s ease backwards;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+body .popup .scrolling {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+body .popup .scrolling .popup-tekst {
+  margin: 10px;
+  font-family: "Open Sauce Sans";
+  font-weight: 600;
+  flex-shrink: 0;
+  color: #cb4d79;
+  font-size: x-large;
+  animation: scrolling 10s infinite linear;
+  transition: 2s;
+}
+@keyframes scrolling {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(-350px);
+  }
+}
+body .popup #bevestig {
+  background-color: #cb4d79;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-family: "Rubik";
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .popup #bevestig:hover {
+  background-color: #94294e;
+}
 body .grid-container {
   display: grid;
   grid-template-areas: "header header header header header header" "info info info projects projects projects";

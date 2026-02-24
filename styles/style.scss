@@ -20,11 +20,8 @@
 html {
   height: max-content;
   overflow: hidden;
-  background: conic-gradient(
-      from 41deg at 65% 74%,
-      #ff000008 0%,
-      #ff95140f 100%
-    ),
+  background:
+    conic-gradient(from 41deg at 65% 74%, #ff000008 0%, #ff95140f 100%),
     //reference noise filter file
     url(/images/nnnoise.svg),
     linear-gradient(to bottom left, #f9b0d5 0%, #0000ff00 70%),
@@ -32,9 +29,9 @@ html {
     linear-gradient(to top left, #ffc98fff 0%, #0000ff00 70%),
     linear-gradient(to top, #ffffffff 0%, #ffffffff 100%);
 
-    @media only screen and (max-width: 1320px) {
-      overflow: auto;
-    }
+  @media only screen and (max-width: 1320px) {
+    overflow: auto;
+  }
 
   a {
     text-decoration: none;
@@ -50,6 +47,72 @@ body {
     padding: 0 !important;
     margin: 0 !important;
   }
+
+  .popup {
+    background-color: #fffcf9;
+    padding: 10px;
+    position: absolute;
+    border-radius: 15px;
+    width: max-content;
+    max-width: 350px;
+    border: 3px solid #cb4d79;
+    font-family: "Be Vietnam Pro";
+    right: 10px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease backwards;
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translate(0px, 20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+      }
+    }
+
+    .scrolling {
+      width: max-content;
+      display: flex;
+      align-items: center;
+
+      .popup-tekst {
+        margin: 10px;
+        font-family: "Open Sauce Sans";
+        font-weight: 600;
+        flex-shrink: 0;
+        color: #cb4d79;
+        font-size: x-large;
+        animation: scrolling 10s infinite linear;
+        transition: 2s;
+        @keyframes scrolling {
+          from {
+            transform: translateX(-10px);
+          }
+          to {
+            transform: translateX(-350px);
+          }
+        }
+      }
+    }
+
+    #bevestig {
+      background-color: #cb4d79;
+      border: none;
+      color: white;
+      font-weight: 500;
+      font-family: "Rubik";
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #94294e;
+      }
+    }
+  }
+
   .grid-container {
     display: grid;
     grid-template-areas:
@@ -130,7 +193,6 @@ body {
 
       text-align: center;
       font-family: "Alegreya";
-
 
       .project {
         min-width: 250px;

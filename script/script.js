@@ -11,18 +11,24 @@ var showMenu = document.getElementById("showMenu")
 var close = document.getElementById("close")
 var hamburgerMenu = document.getElementById("hamburgerMenu")
 var transparant = document.getElementById("transparant")
+var removeButton = document.getElementById("bevestig");
 
-showMenu.onclick = function(){
+showMenu.onclick = function () {
   hamburgerMenu.style.display = "block"
   transparant.style.display = "block"
 }
 
-transparant.onclick = function(){
+transparant.onclick = function () {
   hamburgerMenu.style.display = "none"
   transparant.style.display = "none"
 }
 
-close.onclick = function(){
+close.onclick = function () {
   hamburgerMenu.style.display = "none"
   transparant.style.display = "none"
+}
+
+function removePopUp() {
+  var popup = document.getElementById("message");
+  popup.remove();
 }
