@@ -74,26 +74,28 @@ body {
 
     .scrolling {
       width: max-content;
-      display: flex;
+      overflow: hidden;
       align-items: center;
+      white-space: nowrap;
+      display: inline-block;
+      animation: scrolling 8s infinite linear;
+      @keyframes scrolling {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-100%, 0);
+        }
+      }
 
       .popup-tekst {
+        display: inline-block;
         margin: 10px;
         font-family: "Open Sauce Sans";
         font-weight: 600;
         flex-shrink: 0;
         color: #cb4d79;
         font-size: x-large;
-        animation: scrolling 10s infinite linear;
-        transition: 2s;
-        @keyframes scrolling {
-          from {
-            transform: translateX(-10px);
-          }
-          to {
-            transform: translateX(-350px);
-          }
-        }
       }
     }
 
