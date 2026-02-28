@@ -1,13 +1,29 @@
-<body class=" bg-(--background-color) w-full h-screen px-32 pt-4">
-  <app-navbar></app-navbar>
-  <app-introduction></app-introduction>
+<html class="h-dvh bg-(--background-color)">
+  <body class="scrollbar-hidden w-full h-fit px-32 pt-4 py-10">
+    <app-navbar></app-navbar>
+    <app-introduction></app-introduction>
 
-  <div>
-    <p class="font-(family-name:--subheader-font) font-bold text-2xl text-(--primary-theme-color)">
-      MIJN WERK
-    </p>
-  </div>
-  <app-project-item></app-project-item>
-  <app-project-item></app-project-item>
-  <app-footer></app-footer>
-</body>
+    <div>
+      <p
+        class="font-(family-name:--subheader-font) font-bold text-2xl text-(--primary-theme-color) py-10"
+      >
+        MIJN WERK
+      </p>
+    </div>
+    <nav class="grid justify-center justify-items-center">
+      <app-project-item
+        borderColor="border-(--secondary-theme-color)"
+        bgcolor="bg-(--secondary-theme-color)"
+        image="./assets/images/samenaanz.png"
+        textColor="text-(--text-toned-color)"
+      ></app-project-item>
+      <app-project-item
+        borderColor="border-(--tertiary-theme-color)"
+        bgcolor="bg-(--tertiary-theme-color)"
+        image="./assets/images/android.png"
+        textColor="text-white"
+      ></app-project-item>
+    </nav>
+  </body>
+  <app-footer class="left-0 bottom-0"></app-footer>
+</html>

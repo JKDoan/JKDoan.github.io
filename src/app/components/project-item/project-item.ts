@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-item',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './project-item.html',
 })
 export class ProjectItem {
-
+  @Input() bgcolor: string = "";
+  @Input() borderColor: string = "";
+  @Input() image: string = ""
+  @Input() textColor: string = ""
 }

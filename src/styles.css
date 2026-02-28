@@ -2,6 +2,12 @@
 
 @import 'tailwindcss';
 
+html {
+  overflow-y: scroll;
+  -ms-overflow-style: none;   /* IE and Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+
 :root {
   /* CSS variables */
   --background-color: #fffcf9;
@@ -25,7 +31,6 @@
   --subheader-font: 'Rubik';
   --text-font: 'Be Vietnam Pro';
 
-  --border: 1vw;
   @layer components {
     .text {
       font-family: 'Be Vietnam Pro';
@@ -33,4 +38,5 @@
       line-height: var(--text-sm--line-height);
     }
   }
+
 }
