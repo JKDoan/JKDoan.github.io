@@ -8,6 +8,12 @@ html {
   scrollbar-width: none;      /* Firefox */
 }
 
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-medium-intro: 1135px;
+  --breakpoint-full-intro: 1300px;
+}
+
 :root {
   /* CSS variables */
   --background-color: #fffcf9;
@@ -38,5 +44,4 @@ html {
       line-height: var(--text-sm--line-height);
     }
   }
-
 }

@@ -1,5 +1,5 @@
-<html class="h-dvh bg-(--background-color)">
-  <body class="scrollbar-hidden w-full h-fit px-32 pt-4 py-10">
+<html class="flex flex-col min-h-screen bg-(--background-color)">
+  <body class="scrollbar-hidden w-full h-fit px-50 pt-4 py-10">
     <app-navbar></app-navbar>
     <app-introduction></app-introduction>
 
@@ -16,14 +16,16 @@
         bgcolor="bg-(--secondary-theme-color)"
         image="./assets/images/samenaanz.png"
         textColor="text-(--text-toned-color)"
+        header="Datacollectie platform voor het Samen aan Z-project"
       ></app-project-item>
       <app-project-item
         borderColor="border-(--tertiary-theme-color)"
         bgcolor="bg-(--tertiary-theme-color)"
         image="./assets/images/android.png"
         textColor="text-white"
+        header="Front-end namaken voor Android versie"
       ></app-project-item>
     </nav>
   </body>
-  <app-footer class="left-0 bottom-0"></app-footer>
+  <app-footer class=" mt-auto"></app-footer>
 </html>
