@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-details',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './project-details.html',
 })
 export class ProjectDetails {
-
+  @Input() duur: string = ""
 }

@@ -8,7 +8,9 @@
       >
         Rol
       </h2>
-      <p class="font-(family-name:--text-font)">Front-end Developer</p>
+      <p class="font-(family-name:--text-font) text-lg mt-3">
+        <ng-content select="[rol]"></ng-content>
+      </p>
     </div>
     <div class="row-span-1">
       <h2
@@ -16,7 +18,7 @@
       >
         Duur
       </h2>
-      <p class="font-(family-name:--text-font)">Front-end Developer</p>
+      <p class="font-(family-name:--text-font) text-lg mt-3">{{ duur }}</p>
     </div>
     <div class="row-span-1">
       <h2
@@ -24,7 +26,9 @@
       >
         Tools
       </h2>
-      <p class="font-(family-name:--text-font)">Front-end Developer</p>
+      <p class="font-(family-name:--text-font) text-lg mt-3">
+        <ng-content select="[tools]"></ng-content>
+      </p>
     </div>
   </main>
 </body>
