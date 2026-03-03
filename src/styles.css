@@ -9,7 +9,6 @@ html {
 }
 
 @theme {
-  --breakpoint-xs: 30rem;
   --breakpoint-medium-intro: 1135px;
   --breakpoint-full-intro: 1300px;
 }
