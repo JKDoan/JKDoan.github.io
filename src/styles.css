@@ -40,7 +40,7 @@ html {
   @layer components {
     .text {
       font-family: 'Be Vietnam Pro';
-      font-size: var(--text-sm); /* 0.875rem (14px) */
+      font-size: 15px;
       line-height: var(--text-sm--line-height);
     }
   }

@@ -1,0 +1,18 @@
+<body>
+  <div class="grid grid-cols-2">
+    <div class="col-span-1 font-(family-name:--text-font) text-lg mt-3">
+      <h3
+        class="text-white bg-(--secondary-theme-color) w-fit font-(family-name:--subheader-font) text-base"
+      >
+        <p class="m-3 font-semibold">{{ phase }}</p>
+      </h3>
+      <h2
+        class="text-(--primary-theme-color) font-(family-name:--subheader-font) text-3xl font-bold"
+      >
+        {{ title }}
+      </h2>
+      <ng-content select="[content]"></ng-content>
+    </div>
+    <img src="{{ image }}" />
+  </div>
+</body>
