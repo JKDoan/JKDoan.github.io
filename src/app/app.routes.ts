@@ -15,5 +15,15 @@ export const routes: Routes = [
         path: "contact",
         loadComponent: () =>
             import('./pages/contact/contact').then((m) => m.Contact),
+    },
+    {
+        path: "samen-aan-z",
+        loadComponent: () =>
+            import('./pages/samen-aan-z/samen-aan-z').then((m) => m.SamenAanZ),
+    },
+    {
+        path: "front-end-android",
+        loadComponent: () =>
+            import('./pages/front-end-android/front-end-android').then((m) => m.FrontEndAndroid),
     }
 ];

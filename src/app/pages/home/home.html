@@ -11,21 +11,28 @@
       </p>
     </div>
     <nav class="grid justify-center justify-items-center">
-      <app-project-item
-        borderColor="border-(--secondary-theme-color)"
-        bgcolor="bg-(--secondary-theme-color)"
-        image="./assets/images/samenaanz.png"
-        textColor="text-(--text-toned-color)"
-        header="Datacollectie platform voor het Samen aan Z-project"
-      ></app-project-item>
-      <app-project-item
-        borderColor="border-(--tertiary-theme-color)"
-        bgcolor="bg-(--tertiary-theme-color)"
-        image="./assets/images/android.png"
-        textColor="text-white"
-        header="Front-end namaken voor Android versie"
-      ></app-project-item>
+      <a routerLink="/samen-aan-z">
+        <app-project-item
+          borderColor="border-(--secondary-theme-color)"
+          bgcolor="bg-(--secondary-theme-color)"
+          image="./assets/images/samenaanz.png"
+          textColor="text-(--text-toned-color)"
+          header="Nieuwsfeature voor datacollectie platform"
+        ></app-project-item>
+      </a>
+
+      <a routerLink="/front-end-android">
+        <app-project-item
+          borderColor="border-(--tertiary-theme-color)"
+          bgcolor="bg-(--tertiary-theme-color)"
+          image="./assets/images/android.png"
+          textColor="text-white"
+          header="Front-end namaken voor Android versie"
+        ></app-project-item>
+      </a>
     </nav>
   </body>
-  <app-footer class=" mt-auto"></app-footer>
+  <app-footer class="mt-auto"></app-footer>
 </html>
+
+<router-outlet></router-outlet>
