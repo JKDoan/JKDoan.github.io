@@ -1,5 +1,5 @@
 <body
-  class="overflow-hidden my-4 grid grid-cols-1 grid-rows-6 w-96 max-h-min bg-white border-solid border-3 border-(--primary-theme-color)"
+  class="overflow-hidden my-4 grid grid-cols-1 grid-rows-6 w-auto max-h-min bg-white border-solid border-3 border-(--primary-theme-color) sm:w-96"
 >
   <div class="row-span-2">
     <div
@@ -13,6 +13,6 @@
   </div>
 
   <div class="row-span-4 bg-(--primary-theme-color) grid justify-items-center py-5">
-    <p class="font-(family-name:--subheader-font) text-2xl text-white">{{ content }}</p>
+    <p class="font-(family-name:--subheader-font) text-xl text-white sm:text-2xl px-4 sm:px-0">{{ content }}</p>
   </div>
 </body>
