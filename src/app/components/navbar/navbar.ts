@@ -8,4 +8,7 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 })
 export class Navbar {
 
+  activate(): void {
+    console.log("dddd")
+  }
 }

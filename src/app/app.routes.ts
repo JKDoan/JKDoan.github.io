@@ -22,6 +22,11 @@ export const routes: Routes = [
             import('./pages/samen-aan-z/samen-aan-z').then((m) => m.SamenAanZ),
     },
     {
+        path: "onboarding",
+        loadComponent: () =>
+            import('./pages/onboarding/onboarding').then((m) => m.Onboarding),
+    },
+    {
         path: "front-end-android",
         loadComponent: () =>
             import('./pages/front-end-android/front-end-android').then((m) => m.FrontEndAndroid),

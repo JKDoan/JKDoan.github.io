@@ -1,7 +1,7 @@
 <nav class="flex justify-between items-center w-full h-24">
   <a routerLink=""> <img alt="logo" src="./assets/images/logo.png" class="size-28" /></a>
 
-  <div class="w-full flex items-center justify-end space-x-10">
+  <div class="w-full flex items-center justify-end space-x-10 hidden sm:flex">
     <a class="font-(family-name:--subheader-font) text-(--primary-theme-color)" routerLink=""
       >MIJN WERK</a
     >
@@ -21,6 +21,13 @@
       routerLink="/contact"
       >CONTACT</a
     >
+  </div>
+  <div class = "p-4 bg-(--primary-theme-color)  sm:hidden">
+    <div class="tham tham-e-squeeze tham-w-7" (click)="activate()">
+      <div class="tham-box">
+        <div class="tham-inner bg-white"></div>
+      </div>
+    </div>
   </div>
 </nav>
 

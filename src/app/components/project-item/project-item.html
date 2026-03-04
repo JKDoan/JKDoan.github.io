@@ -1,14 +1,14 @@
 <body
   class="my-4 overflow-hidden  w-full h-auto bg-(--background-color) border-solid border-3 {{
     borderColor
-  }} sm:grid grid-cols-5 grid-rows-1"
+  }} grid grid-cols-1 grid-rows-1 sm:grid-cols-5 grid-rows-1"
 >
-  <div class="col-span-2 {{ bgcolor }}">
+  <div class="col-span-2 {{ bgcolor }} order-last w-auto sm:order-first ">
     <p class="font-(family-name:--header-font) text-3xl font-bold p-6 {{ textColor }} medium-intro:text-4xl full-intro:text-4xl">
       {{header}}
     </p>
   </div>
-  <div class="col-span-3">
+  <div class="col-span-3 order-first sm:order-last">
     <img src="{{ image }}" />
   </div>
 </body>
