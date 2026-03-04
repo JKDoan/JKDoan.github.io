@@ -22,7 +22,7 @@
       >CONTACT</a
     >
   </div>
-  <div class = "p-4 bg-(--primary-theme-color)  sm:hidden">
+  <div class="p-4 bg-(--primary-theme-color) sm:hidden">
     <div class="tham tham-e-squeeze tham-w-7" (click)="activate()">
       <div class="tham-box">
         <div class="tham-inner bg-white"></div>
@@ -30,5 +30,29 @@
     </div>
   </div>
 </nav>
+
+<div class="grid grid-cols-1 grid-rows-4 border-3 border-(--primary-theme-color)">
+  <a
+    class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4 border-b-2"
+    routerLink=""
+    >MIJN WERK</a
+  >
+  <a
+    class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4 border-b-2"
+    routerLink="/over-mij"
+    >OVER MIJ</a
+  >
+  <a
+    class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4"
+    href="./assets/documents/CV.pdf"
+    target="_blank"
+    >MIJN CV</a
+  >
+  <a
+    class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font)"
+    routerLink="/contact"
+    >CONTACT</a
+  >
+</div>
 
 <router-outlet></router-outlet>
