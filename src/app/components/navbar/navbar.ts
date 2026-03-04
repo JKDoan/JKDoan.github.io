@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
 import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, NgStyle],
   templateUrl: './navbar.html',
 })
 export class Navbar {
 
+  visible: boolean = false
+
   activate(): void {
-    console.log("dddd")
+    this.visible = !this.visible
   }
 }
