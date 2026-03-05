@@ -1,18 +1,22 @@
-<body
-  class="overflow-hidden my-4 grid grid-cols-1 grid-rows-6 w-auto max-h-min bg-white border-solid border-3 border-(--primary-theme-color) sm:w-96"
->
-  <div class="row-span-2">
-    <div
-      class="flex items-center h-full px-1.5 border-solid border-b-3 border-(--primary-theme-color)"
-    >
-      <img alt="icon-intro" src="./assets/images/person.png" class="size-6 mr-2" />
-      <p class="font-(family-name:--subheader-font) text-lg text-(--primary-theme-color)">
-        {{ header }}
+<div class="my-3 border-4 border-transparent hover:border-(--hover-nav)">
+  <body
+    class="animate-fade animate-ease-out overflow-hidden grid grid-cols-1 grid-rows-6 w-auto max-h-min bg-white border-solid border-3 border-(--primary-theme-color) sm:w-96"
+  >
+    <div class="row-span-2">
+      <div
+        class="flex items-center h-full px-1.5 border-solid border-b-3 border-(--primary-theme-color)"
+      >
+        <img alt="icon-intro" src="./assets/images/person.png" class="size-6 mr-2" />
+        <p class="font-(family-name:--subheader-font) text-lg text-(--primary-theme-color)">
+          {{ header }}
+        </p>
+      </div>
+    </div>
+
+    <div class="row-span-4 bg-(--primary-theme-color) grid justify-items-center py-5">
+      <p class="font-(family-name:--subheader-font) text-xl text-white sm:text-2xl px-4 sm:px-0">
+        {{ content }}
       </p>
     </div>
-  </div>
-
-  <div class="row-span-4 bg-(--primary-theme-color) grid justify-items-center py-5">
-    <p class="font-(family-name:--subheader-font) text-xl text-white sm:text-2xl px-4 sm:px-0">{{ content }}</p>
-  </div>
-</body>
+  </body>
+</div>

@@ -1,7 +1,7 @@
 <html class="flex flex-col min-h-screen bg-(--background-color)">
   <body class="scrollbar-hidden w-full h-fit px-4 pt-4 py-10 lg:px-30 xl:px-60">
     <app-navbar></app-navbar>
-    <main class="grid justify-center justify-items-center ">
+    <main class="grid justify-center justify-items-center">
       <header
         class="text-(--primary-theme-color) font-(family-name:--header-font) text-4xl font-bold mb-3"
       >
@@ -16,11 +16,14 @@
           ></app-contact-item>
         </a>
 
-        <app-contact-item
-          class="row-span-1"
-          header="TELEFOON"
-          content="06 40770182"
-        ></app-contact-item>
+        <a href="tel:+0640770182">
+          <app-contact-item
+            class="row-span-1"
+            header="TELEFOON"
+            content="06 40770182"
+          ></app-contact-item>
+        </a>
+
         <a href="https://linkedin.com/in/jkdoan" target="_blank">
           <app-contact-item
             class="row-span-1"
@@ -31,5 +34,5 @@
       </div>
     </main>
   </body>
-  <app-footer class=" mt-auto"></app-footer>
+  <app-footer class="mt-auto"></app-footer>
 </html>

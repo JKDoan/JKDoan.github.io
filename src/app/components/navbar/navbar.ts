@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterOutlet, RouterLink, NgStyle],
+  imports: [RouterOutlet, RouterLink, NgStyle, RouterModule],
   templateUrl: './navbar.html',
 })
 export class Navbar {
@@ -14,4 +14,6 @@ export class Navbar {
   activate(): void {
     this.visible = !this.visible
   }
+
+
 }

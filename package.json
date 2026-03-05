@@ -32,6 +32,8 @@
     "@angular/router": "^21.1.0",
     "rxjs": "~7.8.0",
     "tailwind-hamburgers": "^1.4.0",
+    "tailwindcss-animated": "^2.0.0",
+    "tailwindcss-intersect": "^2.2.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

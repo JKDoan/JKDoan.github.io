@@ -2,12 +2,14 @@
 
 @import 'tailwindcss';
 @plugin 'tailwind-hamburgers';
+@import 'tailwindcss-animated';
+@import 'tailwindcss-intersect';
 
 html {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 @theme {
@@ -33,6 +35,8 @@ html {
 
   --text-black-color: black;
   --text-toned-color: #345067;
+
+  --hover-nav: #f0cbd8;
 
   --header-font: 'Open Sauce Sans';
   --subheader-font: 'Rubik';
