@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-center w-full h-24">
+<nav class="flex justify-between items-center w-full h-24 animate-fade-down animate-duration-[800ms] animate-delay-100 animate-ease-out">
   <a routerLink="">
     <img
       alt="logo"
@@ -27,7 +27,7 @@
     >
 
     <a
-      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font) border-4 hover:border-(--hover-nav)"
+      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font) border-4 border-(--background-color) hover:border-(--hover-nav) hover:duration-200 ease-in-out"
       routerLink="/contact"
       routerLinkActive="border-(--hover-nav)"
       >CONTACT</a
@@ -48,18 +48,18 @@
     [ngStyle]="{ display: visible === true ? 'grid' : 'none' }"
   >
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4 border-b-2"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
       routerLink=""
       fragment="mijn-werk"
       >MIJN WERK</a
     >
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4 border-b-2"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
       routerLink="/over-mij"
       >OVER MIJ</a
     >
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) py-2.5 px-4"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
       href="./assets/documents/CV.pdf"
       target="_blank"
       >MIJN CV</a
