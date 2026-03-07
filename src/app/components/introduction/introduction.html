@@ -1,5 +1,5 @@
 <body
-  class="animate-fade-up animate-ease-out  my-4 overflow-hidden w-full h-fit bg-white border-solid border-3 border-(--primary-theme-color) sm:grid grid-cols-5 grid-rows-7"
+  class="animate-fade-up animate-ease-out my-4 overflow-hidden w-full h-fit bg-white border-solid border-3 border-(--primary-theme-color) sm:grid grid-cols-5 grid-rows-7"
 >
   <div class="col-span-5">
     <div
@@ -12,27 +12,36 @@
     </div>
   </div>
   <div
-    class="col-span-2 row-span-6 row-start-2 border-solid border-(--primary-theme-color) sm:border-r-3 "
+    class="col-span-2 row-span-6 row-start-2 border-solid border-(--primary-theme-color) sm:border-r-3"
   >
     <div class="grid grid-rows-5 h-full">
       <div class="row-span-3 p-4">
         <p class="font-(family-name:--subheader-font) text-(--text-toned-color)">Ik ben</p>
         <p
-          class="font-(family-name:--header-font) text-4xl font-bold text-(--primary-theme-color) medium-intro:text-5xl full-intro:text-6xl"
+          class="font-(family-name:--header-font) whitespace-nowrap text-5xl font-bold text-(--primary-theme-color) lg:text-[5vw] sm:text-[5vw]"
         >
           JENNY KIM <br />
           DOAN
         </p>
         <p class="font-(family-name:--subheader-font)">En ik doe aan...</p>
       </div>
-      <div class="bg-(--primary-theme-color) row-span-2 text-5xl">
-        <div class="">
-          <div class="flex items-center">
-            <p class="font-(family-name:--header-font) text-white">FRONT-END</p>
+      <div class="bg-(--primary-theme-color) row-span-2">
+        <div class="grid grid-cols-1 grid-rows-2 h-full">
+          <div class="grid justify-items-center p-2">
+            <p
+              class="font-(family-name:--header-font) text-white font-semibold text-[30px] whitespace-nowrap lg:text-[3vw] sm:text-[4vw]"
+            >
+              UI/UX-DESIGN
+            </p>
           </div>
-
-          <div>
-            <p class="font-(family-name:--header-font) text-white">UI/UX-DESIGN</p>
+          <div
+            class="row-start-2 bg-(--secondary-theme-color) grid justify-items-center p-2"
+          >
+            <p
+              class="font-(family-name:--header-font) text-(--text-toned-color) font-semibold text-[30px] whitespace-nowrap lg:text-[3vw] sm:text-[4vw]"
+            >
+              FRONTEND DEV
+            </p>
           </div>
         </div>
       </div>
@@ -41,7 +50,11 @@
 
   <div class="col-span-3 row-span-6 col-start-3 row-start-2">
     <div class="flex items-center justify-center">
-      <img alt="img-intro" src="./assets/images/intro.png" class="w-auto object-cover animate-fade" />
+      <img
+        alt="img-intro"
+        src="./assets/images/intro.png"
+        class="w-auto object-cover animate-fade"
+      />
     </div>
   </div>
 </body>

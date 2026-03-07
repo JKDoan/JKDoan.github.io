@@ -42,6 +42,7 @@ html {
   --subheader-font: 'Rubik';
   --text-font: 'Be Vietnam Pro';
 
+
   @layer components {
     .text {
       font-family: 'Be Vietnam Pro';
