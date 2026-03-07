@@ -1,49 +1,7 @@
-<html class="flex flex-col min-h-screen bg-(--background-color) scroll-smooth">
-  <body class="scrollbar-hidden w-full h-fit px-4 pt-4 py-10 lg:px-30 xl:px-60">
+<html class="flex flex-col min-h-screen bg-(--background-color)">
+  <body class="w-full px-4 pt-4 py-10 lg:px-30 xl:px-60">
     <app-navbar></app-navbar>
-    <app-introduction></app-introduction>
 
-    <div>
-      <p
-        id="mijn-werk"
-        class="font-(family-name:--subheader-font) font-bold text-4xl py-5 text-(--primary-theme-color)"
-      >
-        MIJN WERK
-      </p>
-    </div>
-    <nav class="grid justify-center justify-items-center">
-      <a routerLink="/samen-aan-z">
-        <app-project-item
-          borderColor="border-(--primary-theme-color)"
-          bgcolor="bg-(--primary-theme-color)"
-          image="./assets/images/samenaanz.png"
-          textColor="text-white"
-          header="Nieuwsfeature voor datacollectie platform"
-        ></app-project-item>
-      </a>
-
-      <a routerLink="/onboarding">
-        <app-project-item
-          borderColor="border-(--secondary-theme-color)"
-          bgcolor="bg-(--secondary-theme-color)"
-          image="./assets/images/onboarding.png"
-          textColor="text-(--text-toned-color)"
-          header="Onboarding voor paardtraining app"
-        ></app-project-item>
-      </a>
-
-      <a routerLink="/front-end-android">
-        <app-project-item
-          borderColor="border-(--tertiary-theme-color)"
-          bgcolor="bg-(--tertiary-theme-color)"
-          image="./assets/images/android.png"
-          textColor="text-white"
-          header="Front-end namaken voor Android versie"
-        ></app-project-item>
-      </a>
-    </nav>
   </body>
   <app-footer class="mt-auto"></app-footer>
 </html>
-
-<router-outlet></router-outlet>

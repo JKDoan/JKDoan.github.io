@@ -1,13 +1,12 @@
-import { Component  } from '@angular/core';
+import { Component } from '@angular/core';
 import { Navbar } from "../../components/navbar/navbar";
-import { Introduction } from '../../components/introduction/introduction';
-import { ProjectItem } from '../../components/project-item/project-item';
 import { Footer } from '../../components/footer/footer';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { HomepageContent } from '../homepage-content/homepage-content';
 
 @Component({
   selector: 'app-home',
-  imports: [Navbar, Introduction, ProjectItem, Footer, RouterOutlet, RouterLink],
+  imports: [Navbar, Footer, RouterOutlet, HomepageContent],
   templateUrl: './home.html',
 })
 export class Home {

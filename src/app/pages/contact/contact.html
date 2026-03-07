@@ -1,38 +1,32 @@
-<html class="flex flex-col min-h-screen bg-(--background-color)">
-  <body class="scrollbar-hidden w-full h-fit px-4 pt-4 py-10 lg:px-30 xl:px-60">
-    <app-navbar></app-navbar>
-    <main class="grid justify-center justify-items-center">
-      <header
-        class="text-(--primary-theme-color) font-(family-name:--header-font) text-4xl font-bold mb-3"
-      >
-        Geïnteresseerd? Contact mij!
-      </header>
-      <div class="grid grid-rows-1">
-        <a href="mailto:jennykimdoan@gmail.com">
-          <app-contact-item
-            class="row-span-1"
-            header="EMAIL"
-            content="jennykimdoan@gmail.com"
-          ></app-contact-item>
-        </a>
+<main class="grid justify-center justify-items-center">
+  <header
+    class="text-(--primary-theme-color) font-(family-name:--header-font) text-4xl font-bold mb-3"
+  >
+    Geïnteresseerd? Contact mij!
+  </header>
+  <div class="grid grid-rows-1">
+    <a href="mailto:jennykimdoan@gmail.com">
+      <app-contact-item
+        class="row-span-1"
+        header="EMAIL"
+        content="jennykimdoan@gmail.com"
+      ></app-contact-item>
+    </a>
 
-        <a href="tel:+0640770182">
-          <app-contact-item
-            class="row-span-1"
-            header="TELEFOON"
-            content="06 40770182"
-          ></app-contact-item>
-        </a>
+    <a href="tel:+0640770182">
+      <app-contact-item
+        class="row-span-1"
+        header="TELEFOON"
+        content="06 40770182"
+      ></app-contact-item>
+    </a>
 
-        <a href="https://linkedin.com/in/jkdoan" target="_blank">
-          <app-contact-item
-            class="row-span-1"
-            header="LINKEDIN"
-            content="linkedin.com/in/jkdoan"
-          ></app-contact-item>
-        </a>
-      </div>
-    </main>
-  </body>
-  <app-footer class="mt-auto"></app-footer>
-</html>
+    <a href="https://linkedin.com/in/jkdoan" target="_blank">
+      <app-contact-item
+        class="row-span-1"
+        header="LINKEDIN"
+        content="linkedin.com/in/jkdoan"
+      ></app-contact-item>
+    </a>
+  </div>
+</main>

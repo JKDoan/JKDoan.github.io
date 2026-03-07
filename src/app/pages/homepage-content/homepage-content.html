@@ -1,0 +1,42 @@
+<app-introduction></app-introduction>
+<div>
+  <p
+    id="mijn-werk"
+    class="font-(family-name:--subheader-font) font-bold text-4xl py-5 text-(--primary-theme-color)"
+  >
+    MIJN WERK
+  </p>
+</div>
+<nav class="grid justify-center justify-items-center">
+  <a routerLink="/samen-aan-z">
+    <app-project-item
+      borderColor="border-(--primary-theme-color)"
+      bgcolor="bg-(--primary-theme-color)"
+      image="./assets/images/samenaanz.png"
+      textColor="text-white"
+      header="Nieuwsfeature voor datacollectie platform"
+    ></app-project-item>
+  </a>
+
+  <a routerLink="/onboarding">
+    <app-project-item
+      borderColor="border-(--secondary-theme-color)"
+      bgcolor="bg-(--secondary-theme-color)"
+      image="./assets/images/onboarding.png"
+      textColor="text-(--text-toned-color)"
+      header="Onboarding voor paardtraining app"
+    ></app-project-item>
+  </a>
+
+  <a routerLink="/front-end-android">
+    <app-project-item
+      borderColor="border-(--tertiary-theme-color)"
+      bgcolor="bg-(--tertiary-theme-color)"
+      image="./assets/images/android.png"
+      textColor="text-white"
+      header="Front-end namaken voor Android versie"
+    ></app-project-item>
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
