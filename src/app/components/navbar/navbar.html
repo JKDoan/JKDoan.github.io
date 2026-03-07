@@ -1,4 +1,6 @@
-<nav class="flex justify-between items-center w-full h-24 animate-fade-down animate-duration-[800ms] animate-delay-100 animate-ease-out">
+<nav
+  class="flex justify-between items-center w-full h-24 animate-fade-down animate-duration-[800ms] animate-delay-100 animate-ease-out"
+>
   <a routerLink="">
     <img
       alt="logo"
@@ -8,32 +10,32 @@
 
   <div class="w-full flex items-center justify-end space-x-6 hidden sm:flex">
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       routerLink=""
       fragment="mijn-werk"
       >MIJN WERK</a
     >
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       routerLink="/over-mij"
       routerLinkActive="bg-(--hover-nav)"
       >OVER MIJ</a
     >
     <a
-      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) text-(--primary-theme-color) p-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       href="./assets/documents/CV.pdf"
       target="_blank"
       >MIJN CV</a
     >
 
     <a
-      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font) border-4 border-(--background-color) hover:border-(--hover-nav) hover:duration-200 ease-in-out"
+      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font) border-4 border-(--background-color) hover:border-(--hover-nav) hover:duration-200 ease-in-out hover:bg-(--primary-theme-color-hover) active:bg-(--primary-theme-color-pressed)"
       routerLink="/contact"
       routerLinkActive="border-(--hover-nav)"
       >CONTACT</a
     >
   </div>
-  <div class="cursor-pointer p-4 bg-(--primary-theme-color) sm:hidden" (click)="activate()">
+  <div class="cursor-pointer p-4 bg-(--primary-theme-color) hover:bg-(--primary-theme-color-hover) focus:bg-(--primary-theme-color-pressed) hover:duration-200 ease-in-out sm:hidden " (click)="activate()">
     <div class="tham tham-e-squeeze tham-w-7">
       <div class="tham-box">
         <div class="tham-inner bg-white"></div>
@@ -48,25 +50,28 @@
     [ngStyle]="{ display: visible === true ? 'grid' : 'none' }"
   >
     <a
-      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       routerLink=""
       fragment="mijn-werk"
+      (click)="activate()"
       >MIJN WERK</a
     >
     <a
-      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 border-b-2 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       routerLink="/over-mij"
+      (click)="activate()"
       >OVER MIJ</a
     >
     <a
-      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 hover:bg-(--hover-nav) hover:duration-200 ease-in-out"
+      class="font-(family-name:--subheader-font) bg-white text-(--primary-theme-color) py-2.5 px-4 hover:bg-(--hover-nav) hover:duration-200 ease-in-out active:bg-(--pressed-nav)"
       href="./assets/documents/CV.pdf"
       target="_blank"
       >MIJN CV</a
     >
     <a
-      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font)"
+      class="bg-(--primary-theme-color) text-white py-2.5 px-4 font-(family-name:--subheader-font) hover:bg-(--primary-theme-color-hover) active:bg-(--primary-theme-color-pressed)"
       routerLink="/contact"
+      (click)="activate()"
       >CONTACT</a
     >
   </div>

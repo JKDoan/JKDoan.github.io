@@ -11,4 +11,5 @@ export class ProjectItem {
   @Input() image: string = ""
   @Input() textColor: string = ""
   @Input() header: string = ""
+  @Input() borderHoverColor: string = ""
 }

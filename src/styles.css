@@ -2,13 +2,12 @@
 
 @import 'tailwindcss';
 @plugin 'tailwind-hamburgers';
+@plugin 'tailwind-scrollbar';
 @import 'tailwindcss-animated';
 @import 'tailwindcss-intersect';
 
 html {
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -23,25 +22,27 @@ html {
 
   --primary-theme-color: #cb4d79;
   --primary-theme-color-hover: #9e365a;
-  --primary-theme-color-pressed: #752340;
+  --primary-theme-color-pressed: #8d3251;
 
   --secondary-theme-color: #4dcb9f;
   --secondary-theme-color-hover: #319a75;
   --secondary-theme-color-pressed: #207256;
+  --secondary-hover: #cbf0e3;
 
   --tertiary-theme-color: #345067;
   --tertiary-theme-color-hover: #253c4f;
   --tertiary-theme-color-pressed: rgb(37, 59, 76);
+  --tertiary-hover: #c4ccd3;
 
   --text-black-color: black;
   --text-toned-color: #345067;
 
   --hover-nav: #f0cbd8;
+  --pressed-nav: #e9aac0;
 
   --header-font: 'Open Sauce Sans';
   --subheader-font: 'Rubik';
   --text-font: 'Be Vietnam Pro';
-
 
   @layer components {
     .text {
