@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ContactItem {
   @Input() header: string = "";
   @Input() content: string = "";
+  @Input() image: string = "";
 }
