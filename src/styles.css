@@ -37,6 +37,8 @@ html {
   --text-black-color: black;
   --text-toned-color: #345067;
 
+  --textbox: #fddde8;
+  --textbox-secondary: #c6f2e2;
   --hover-nav: #f0cbd8;
   --pressed-nav: #e9aac0;
 

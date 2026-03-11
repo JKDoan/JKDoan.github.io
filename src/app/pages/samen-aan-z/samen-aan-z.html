@@ -1,7 +1,7 @@
 <main class="grid justify-center justify-items-center">
   <!-- landing -->
   <app-title
-    header="Nieuwsfeature voor datacollectie platform"
+    header="Nieuwssysteem voor datacollectie platform"
     image="./assets/images/samenaanz/monitor.png"
   ></app-title>
   <app-project-details class="w-full" duur="6 maanden" tools="Android Studio">
@@ -17,52 +17,54 @@
     </ul>
   </app-project-details>
   <!-- content -->
-  <app-paragraph title="Project overzicht">
-    <p content class="text">
-      Samen aan Z is een technisch, psychologisch project dat zich inzet voor het behoud van zorg-
-      en welzijnsmedewerkers. De zorg- en welzijnssector in Vlaanderen en Nederland kampt met een
-      stijgend personeelstekort. Dit wordt veroorzaakt door verschillende factoren, zoals gebrek aan
-      mensen en toenemende ontslagen. Binnen het Samen aan Z project worden dus meerdere middelen
-      gebruikt om zorgwerkers te helpen met het behouden van een goede gezondheid. <br />
-      <br />
-    </p>
-    <p content class="text">
-      Eén van de middelen die het Samen aan Z project gebruikt is een digitaal webbased platform.
-      Zorgwerkers kunnen ermee hun gezondheidsgegevens invoeren met vragenlijsten en
-      activiteitentrackers. Deze gegevens worden dan geanalyseerd door onderzoekers om het welzijn
-      te controleren en monitoren.
-    </p>
-  </app-paragraph>
-  <app-paragraph title="Het probleem">
-    <p content class="text">
-      In het platform was er nog geen methode geïmplementeerd om onderzoekers te laten communiceren
-      met hun doelgroep. Dit had als gevolg dat zorgwerkers niet op de hoogte waren van
-      ontwikkelingen in de onderzoeken, zoals resultaten of nieuwe vragenlijsten. Erdoor waren
-      zorgwerkers minder gemotiveerd om het platform te gebruiken en vragenlijsten in te vullen.
-    </p>
-  </app-paragraph>
-  <app-paragraph title="Het doel">
-    <p content class="text">
-      Bedenken, ontwerpen, en ontwikkelen van een feature binnen het Samen aan Z platform, waarmee
-      onderzoekers nieuws kunnen opstellen naar de zorgwerkers.
-    </p>
-  </app-paragraph>
+  <div class="p-4 bg-(--textbox) my-4 lg:p-8">
+    <app-paragraph title="Project overzicht">
+      <p content class="text">
+        Samen aan Z is een technisch, psychologisch project dat zich inzet voor het behoud van zorg-
+        en welzijnsmedewerkers. De zorg- en welzijnssector in Vlaanderen en Nederland kampt met een
+        stijgend personeelstekort veroorzaakt door verschillende factoren, waaronder
+        gezondheidsproblemen. Binnen het Samen aan Z project worden dus meerdere middelen gebruikt
+        om zorgwerkers te helpen met het behouden van een goede gezondheid. <br />
+        <br />
+      </p>
+      <p content class="text">
+        Eén van de middelen die het Samen aan Z project gebruikt is een digitaal webbased platform,
+        waarin zorgwerkers hun gezondheidsgegevens invoeren. Deze gegevens worden dan geanalyseerd
+        door onderzoekers om het welzijn te controleren en monitoren.
+      </p>
+    </app-paragraph>
+    <app-paragraph title="Het probleem">
+      <p content class="text">
+        In het platform was er nog geen methode geïmplementeerd om onderzoekers te laten
+        communiceren met hun doelgroep. Dit had als gevolg dat zorgwerkers niet op de hoogte waren
+        van ontwikkelingen in de onderzoeken, zoals resultaten of nieuwe vragenlijsten. Erdoor waren
+        zorgwerkers minder gemotiveerd om het platform te gebruiken en vragenlijsten in te vullen.
+      </p>
+    </app-paragraph>
+    <app-paragraph title="Het doel">
+      <p content class="text">
+        Bedenken, ontwerpen, en ontwikkelen van een feature binnen het Samen aan Z platform, waarmee
+        onderzoekers nieuwsbrieven kunnen opstellen en schrijven naar hun doelgroepen.
+      </p>
+    </app-paragraph>
+  </div>
+
   <!-- Empathize -->
   <app-paragraph-with-image
     image="./assets/images/android.png"
-    title="Wie zijn mijn gebruikers?"
+    title="Wie zijn de onderzoekers?"
     phase="EMPATHIZE"
   >
     <p content class="text">
       Als eerste deed ik onderzoek naar de behoeften van mijn doelgroep: de onderzoekers. Omdat ik
-      niet veel tijd had voor het project, besloot ik om een herhalende patroon uit te voeren voor
-      het sneller maken en itereren van prototypes: <br />
+      niet veel tijd had voor het project, voerde ik deze fase uit volgens een patroon om snel
+      prototypes te maken en itereren: <br />
       <br />
     </p>
     <ul content class="text">
       <li>
-        • <span class="font-semibold text-base">Interviews</span>: Ik interviewde ik een aantal
-        onderzoekers binnen Fontys over wat zij willen voor het maken van nieuwsbrieven.
+        • <span class="font-semibold text-base">Interviews</span>: Ik interviewde een onderzoeker
+        over wat zij willen voor het maken van nieuwsbrieven.
       </li>
       <li>
         • <span class="font-semibold text-base">Prototyping</span>: Op basis van de antwoorden uit
@@ -70,28 +72,25 @@
       </li>
       <li>
         •
-        <span class="font-semibold text-base">Testing </span>
-        : Ik test prototype uit met de volgende interviewee op gebruiksvriendelijkheid en
-        behoeftevervulling.
+        <span class="font-semibold text-base">Testing</span>: Ik test prototype uit met de volgende
+        interviewee op gebruiksvriendelijkheid en behoeftevervulling.
       </li>
     </ul>
   </app-paragraph-with-image>
   <app-paragraph>
     <p content class="text">
-      In deze fase contacteerde ik een aantal doelgroeponderzoekers van Fontys Hogescholen over hun
-      mening van de nieuwsbrieven, en wat zij zouden willen als zij ermee moesten werken. Van de
-      interviews kwamen een paar belangrijke inzichten naar voren: <br />
-      <br />
+      Deze patroon voerde ik vier keer uit, die ieder een duur had van een week. In deze fase kwamen
+      een aantal belangrijke inzichten naar voren over de nieuwsberichten:
     </p>
-    <ul content class="text space-y-1">
+    <ul content class="text space-y-1 mt-3">
       <li>
-        • Onderzoekers zouden het niet fijn vinden om regelmatig nieuwsbrieven te sturen naar hun
+        • Onderzoekers zouden het niet fijn vinden om regelmatig nieuwsberichten te sturen naar hun
         doelgroep. Zij hebben het namelijk als druk met hun werk.
       </li>
       <li>
-        • Als onderzoekers nieuwsbrieven moeten schrijven, dan willen zij de waarde ervan weten.
+        • Als onderzoekers nieuwsberichten moeten schrijven, dan willen zij de waarde ervan weten.
       </li>
-      <li>• Onderzoekers willen manieren om snel nieuwsbrieven op te zetten.</li>
+      <li>• Onderzoekers willen manieren om snel nieuwsberichten op te zetten.</li>
       <li>
         • Sommige onderzoekers zijn gewend om voorschriften te hebben voor het schrijven van
         artikelen en nieuws, zodat het van tevoren duidelijk is wat en hoeveel zij moeten schrijven.
@@ -99,15 +98,136 @@
     </ul>
   </app-paragraph>
   <!-- Define -->
-  <app-paragraph title="Het doel" phase="DEFINE">
+  <app-paragraph title="Onderzoekers in het kort" phase="DEFINE">
+    <p content class="text">
+      Ik verwerkte alle belangrijke punten van de Empathize fase in een <b>Affinity Map</b> om alle
+      informatie bij elkaar te zetten. Deze categoriseerde ik dan in een aantal onderwerpen om een
+      goed algemeen beeld te krijgen van de onderzoekers en hun standpunten over de nieuwsberichten.
+    </p>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/affinitymap.png" />
+  <app-paragraph>
+    <p content class="text">
+      Na het ordenen van de informatie bracht ik de houdingen en gedragen van de onderzoekers in
+      kaart met een <b>Empathy map</b>. Zo kreeg ik een overzicht over hoe de onderzoekers denken
+      over de nieuwsberichten en hun omgeving.
+    </p>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/empathymap.png" />
+  <app-paragraph>
+    <p content class="text">Van deze overzicht kon ik daarna twee kenmerken aankaarten:</p>
+    <ul content class="text space-y-1 mt-3">
+      <li>
+        • <span class="font-semibold text-base">Pijnpunten</span>: Wat zijn de obstakels die de
+        onderzoekers tegenkomen in hun werk, of verwachten tegen te komen met de nieuwsberichten?
+      </li>
+      <li>
+        • <span class="font-semibold text-base">Winstpunten</span>: Wat willen de onderzoekers
+        bereiken met hun werk of de nieuwsberichten?
+      </li>
+    </ul>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/pijnwinst.png" />
+  <app-paragraph>
+    <p content class="text">
+      De informatie die ik leerde van de Affinity map, Empathy map en pijn- en winstpunten bracht ik
+      dan uiteindelijk samen in een <b>Persona</b>, die dient als een representatief van mijn
+      doelgroep. Ermee kon gebruikersgericht oplossingen bedenken die behoeftes kunnen vervullen
+      en/of de frustraties verminderen.
+    </p>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/persona.jpg" />
+  <!-- Ideate -->
+  <app-paragraph title="Ideeën, ideeën en meer ideeën" phase="IDEATE">
+    <p content class="text">
+      Na de Define-fase brainstormde ik naar ideeën voor features in de nieuwsberichtsysteem.
+      Tijdens dit proces kwam ik op zoveel mogelijk ideeën voor alle benodigdheden van de eerdere
+      Persona. Daarnaast vulde ik de brainstorm ook toe met ideeën die eerder opkwamen van de
+      Empathize fase.
+    </p>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/brainstorm.jpg" />
+  <app-paragraph>
+    <p content class="text">
+      Omdat ik uiteindelijk zoveel ideeën had aan het einde, prioriteerde ik die allemaal in een
+      <b>MoSCOW tabel</b> op basis van drie punten:
+    </p>
+    <ul content class="text space-y-1 mt-3">
+      <li>
+        • Hoeveel tijd zou het kosten om de minimale functionaliteit van deze feature te
+        implementeren?
+      </li>
+      <li>• Hoe belangrijk is deze feature voor het functioneren van de nieuwsberichtsysteem?</li>
+      <li>• Hoe belangrijk is deze feature voor het vervullen van de onderzoekers’ behoeften?</li>
+    </ul>
+  </app-paragraph>
+  <img src="./assets/images/samenaanz/moscow.png" />
+  <!-- Prototype -->
+  <app-paragraph title="Zo werkt het ongeveer" phase="PROTOTYPING">
+    <p content class="text">
+      Met een compleet overzicht van alle features in hand, ging ik naar de volgende stap: een
+      aantal van de belangrijke features over te zetten in een Figma prototype.
+      <br />
+      <br />
+      De User-Interaction design van het platform was voorheen ontworpen door andere stagiaires.
+      Tijdens deze opdracht werkte ik ook met een stagiair die verantwoordelijk was voor het
+      verfijnen van de UI, en het vertalen ervan naar een front-end applicatie. Voor soepele
+      development moest mijn interface voor de nieuwsberichtsysteem overeenkomen met zijn designs.
+      Om deze reden is er ook een grote design verschil tussen de eerste high-fidelity prototype en
+      de definitieve versie.
+    </p>
+  </app-paragraph>
+
+  <div class="p-4 bg-(--textbox-secondary) my-4 lg:p-8">
+    <app-paragraph title="Van de Empathize fase">
+      <p content class="text text-lg font-semibold text-(--text-toned-color) mb-2">
+        Low-fidelity wireframes prototypes
+      </p>
+      <p content class="text">
+        Dit was de eerste prototype die ik ontwerp na mijn eerste interview met een onderzoeker.
+        Deze bevat alleen de basisfunctionaliteiten: het maken en versturen van een nieuwsbericht.
+        De lay-out van een bericht kan van tevoren worden aangepast met een template.
+      </p>
+    </app-paragraph>
+    <img src="./assets/images/samenaanz/wireframes.png" />
+    <app-paragraph>
+      <p content class="text text-lg font-semibold text-(--text-toned-color)">
+        Eerste high-fidelity prototypes
+      </p>
+      <p content class="text">
+        Dit was de eerste prototype die ik ontwerp na mijn eerste interview met een onderzoeker.
+        Deze bevat alleen de basisfunctionaliteiten: het maken en versturen van een nieuwsbericht.
+        De lay-out van een bericht kan van tevoren worden aangepast met een template.
+      </p>
+    </app-paragraph>
+    <img src="./assets/images/samenaanz/high1.png" />
+    <app-paragraph-with-image image="./assets/images/samenaanz/userflow.png">
+      <p content class="text text-lg font-semibold text-(--text-toned-color) mb-2">User flow</p>
+      <p content class="text text-base">
+        Ik creëerde een user flow, die de stappen van een gebruiker weergeeft bij het publiceren van
+        een nieuwsbericht. Deze flow werd steeds geïtereerd met de feedback die ik kreeg van het
+        testen van de prototype.
+        <br />
+        <br />
+        Uiteindelijk kwam ik op deze user flow uit, die ik dan toepaste voor de definitieve
+        prototype versie.
+      </p>
+    </app-paragraph-with-image>
+  </div>
+
+  <div class="p-4 bg-(--textbox) my-4 lg:p-8">
+    <app-paragraph title="De definitieve prototype">
+      <p content class="text text-base">Deze prototype</p>
+    </app-paragraph>
+    <img src="./assets/images/samenaanz/high2.png" />
+  </div>
+
+  <!-- Implement -->
+
+  <app-paragraph title="En nu echt maken!" phase="TESTING EN IMPLEMENT">
     <p content class="text">
       Bedenken, ontwerpen, en ontwikkelen van een feature binnen het Samen aan Z platform, waarmee
       onderzoekers nieuws kunnen opstellen naar de zorgwerkers.
     </p>
   </app-paragraph>
-  <!-- Ideate -->
-
-  <!-- Prototype -->
-
-  <!-- Implement -->
 </main>
