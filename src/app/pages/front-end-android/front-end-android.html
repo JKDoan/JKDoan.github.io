@@ -5,11 +5,14 @@
     image="./assets/images/android/phones.png"
   ></app-title>
   <app-project-details class="w-full" duur="6 maanden">
-    <ul rol class="list-disc">
-      <li>Front-end developer</li>
+    <ul rol>
+      <li>• Front-end developer</li>
     </ul>
-    <ul tools class="list-disc">
-      <li>Android Studio</li>
+    <ul tools>
+      <li>• Android Studio</li>
+      <li>• Jira</li>
+      <li>• Adobe XD</li>
+      <li>• BitBucket</li>
     </ul></app-project-details
   >
   <!-- content -->
@@ -22,28 +25,97 @@
         en zijn positie in de markt te verstevigen.
         <br />
         <br />
-        WaveLapp uit verschillende applicaties waarin organisaties hun dagelijkse activiteiten
-        kunnen vastleggen. Destijds bestond het platform ook uit een iOS-app waarin men hun taken
-        konden meten en vastleggen. Tegenwoordig is de app niet meer actief.
+        In totaal bestaat WaveLapp uit vier applicaties waarin organisaties hun activiteiten kunnen
+        vastleggen: Kaizen, Stand-up, Meeting-post, en Insight. Deze applicaties zijn ook
+        toegankelijk als iOS-apps.
       </p>
     </app-paragraph>
     <app-paragraph title="Het probleem">
       <p content class="text">
-        Destijds had LearningWaves alleen maar een iOS-app voor het meten van werkprocessen.
-        Hierdoor konden professionals, die alleen een Android-apparaat hadden, hun metingen niet
-        uitvoeren tijdens hun werk. Erdoor was dus besloten om een Android-versie van WaveLapp te
-        creëren, die toen nog alleen in de planning stond.
+        LearningWaves had hun WaveLapp apps, behalve Kaizen, alleen op iOS. Professionals die alleen
+        Android telefoons hadden konden hun metingen dus alleen handmatig uitvoeren op papier of
+        digitaal. Erdoor was dus besloten om een Android-versie van de apps te creëren, die toen nog
+        alleen in de planning stond.
       </p>
     </app-paragraph>
     <app-paragraph title="Het doel">
       <p content class="text">
-        Ontwikkelen van een Android-versie van WaveLapp, waarin de front-end hetzelfde overeenkomt
-        zoals de iOS app. In de app ontwikkel ik een merendeel van de front-end van twee
-        meetfunctionaliteiten, SNAPSHOT en GAUGE.
+        Ontwikkelen van een Android-versie van de Insight app, waarin de front-end hetzelfde
+        overeenkomt zoals de iOS app. In de app ontwikkel ik de front-end van de twee
+        meetfunctionaliteiten Snapshot en Disturbance.
       </p>
     </app-paragraph>
   </div>
-  <app-paragraph title="Begin">
-    <p content class="text">Ik begon met</p>
+  <app-paragraph-with-image title="Planning" image="./assets/images/android/visual-dailystand.png">
+    <p content class="text">
+      Voorheen besprak ik eerst uitgebreid met mijn bedrijfsbegeleider over de benodigde schermen
+      voor het project, en wat zijn verwachtingen waren. Voor het project was het belangrijk dat:<br /><br />
+    </p>
+    <ul content class="text">
+      <li>
+        • De meetproducten moesten minimaal een aantal schermen bevatten waarvan men zijn doel kon
+        bereiken ermee.
+      </li>
+      <li>• De front-end exact hetzelfde uit moest zien als de iOS app.</li>
+      <li>• Animaties voor navigeren moeten hetzelfde zijn als de iOS app.</li>
+      <li>• De minimale ondersteunende schermgrootte is 5”8 inch.</li>
+      <li>
+        • Bepaalde componenten in schermen moesten <i>dynamic styling</i> hebben afhankelijk van
+        user-inputs.
+      </li>
+    </ul>
+  </app-paragraph-with-image>
+
+  <app-paragraph title="Development">
+    <p content class="text">
+      Als eerste stap creëerde ik een volledige compositiediagram van de Snapshot en Disturbance
+      metingen. Zo kon ik overzicht houden van alle benodigde schermen en verbindingen met anderen.
+    </p>
+
+    <p content class="text">
+      <br />
+      Voor het ontwikkelen van de front-end werkte ik met Kotlin, waar ik voorheen weinig ervaring
+      had. Om deze reden moest ik dus eerst de basiskennis van Kotlin leren, en hoe ik ermee de
+      front-end kon bouwen. Hiervoor gebruikte ik vooral online documentaties, zoals de officiële
+      Android documentatie en tutorials. In het project begon ik eerste met het implementeren van
+      simpele UI-componenten, waarna ik stapsgewijs meer leerde over Kotlin zoals
+      <i>dynamic styling</i>.
+    </p>
+    <p content class="text">
+      <br />
+      Tijdens development liet ik mijn werk regelmatig zien aan mijn bedrijfsbegeleider. Zo hield ik
+      hem steeds op de hoogte van de status van mijn project, en kon ik eventueel feedback krijgen
+      op de werking en uiterlijk van de app.
+    </p>
   </app-paragraph>
+
+  <app-paragraph title="Eindresultaat" class="w-full">
+    <div content class="flex items-center justify-center">
+      <div
+        content
+        class="bg-linear-to-t from-[#090d3b] to-[#5d5a63] p-(--card-padding) rounded-(--card-radius) h-fit"
+      >
+        <video
+          content
+          class="h-auto w-auto rounded-[calc(var(--card-radius)-var(--card-padding))] sm:h-175"
+          controls
+          muted
+        >
+          <source src="./assets/images/android/wavelapp.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </app-paragraph>
+
+  <div class="p-4 w-full bg-(--textbox) my-4 lg:p-8">
+    <app-paragraph title="Wat ik hiervan uithaalde...">
+      <ul content class="text">
+        <li>• Opbouwen van een professionele houding tijdens werk.</li>
+        <li>• Basiskennis over front-end development voor Android apps.</li>
+        <li>• Hoe ik een development-log bijhoud.</li>
+        <li>• Een tevreden stagebedrijf.</li>
+      </ul>
+    </app-paragraph>
+  </div>
 </main>

@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectDetails {
   @Input() duur: string = ""
+  @Input() structuur: string = ""
 }
