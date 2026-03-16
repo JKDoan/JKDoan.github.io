@@ -39,6 +39,7 @@ html {
 
   --textbox: #fddde8;
   --textbox-secondary: #c6f2e2;
+  --textbox-tertiary: #c4ccd3;
   --hover-nav: #f0cbd8;
   --pressed-nav: #e9aac0;
 
@@ -46,8 +47,8 @@ html {
   --subheader-font: 'Rubik';
   --text-font: 'Be Vietnam Pro';
 
-  --card-padding:--spacing(5);
-  --card-radius:var(--radius-4xl);
+  --card-padding: --spacing(5);
+  --card-radius: var(--radius-4xl);
 
   @layer components {
     .text {

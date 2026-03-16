@@ -4,16 +4,14 @@
     header="Widget onboarding voor paardtraining app"
     image="./assets/images/onboarding/phones.png"
   ></app-title>
-  <app-project-details
-    class="w-full"
-    duur="3 maanden"
-  >
+  <app-project-details class="w-full" duur="3 maanden">
     <ul rol>
       <li>• UI/UX-designer</li>
       <li>• Front-end developer</li>
     </ul>
     <ul tools>
       <li>• Figma</li>
+      <li>• Miro</li>
       <li>• Visual Studio Code</li>
     </ul></app-project-details
   >
@@ -42,9 +40,11 @@
         technologie. <br />
         <br />
 
-        Omdat deze groep ook een groot deel vormden van Equine Integration's klantengroep, wilde het
-        bedrijf daarom de app makkelijker maken voor hun. Één van de manieren hiervoor was het geven
-        van onboarding voor het plaatsen van widgets op een homescreen.
+        Omdat deze groep ook een groot deel vormden van Equine Integration's klantengroep, wilde zij
+        daarom de app makkelijker maken voor hun met nieuwe features en onboarding. Voor dit werkte
+        ik in een groepsproject om dit samen te realiseren. Één van de manieren om dit te bereiken
+        was het geven van onboarding voor het plaatsen van widgets op een homescreen. In de widgets
+        kunnen gebruikers meteen zien hoe hun paard ervoor staat.
       </p>
     </app-paragraph>
     <app-paragraph title="Het doel">
@@ -55,7 +55,7 @@
     </app-paragraph>
     <a
       target="_blank"
-      href="https://www.figma.com/proto/TFEfTuFxkhhAZMk5EdMPPa/Equine-Integration-Concept--Copy-?page-id=1023%3A448&node-id=1387-290&viewport=417%2C-1191%2C0.21&t=tEJH5FnHTLO1arCb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1387%3A290&show-proto-sidebar=1"
+      href="https://www.figma.com/proto/TFEfTuFxkhhAZMk5EdMPPa/Equine-Integration-Concept--Copy-?page-id=1023%3A448&node-id=1387-290&viewport=417%2C-1191%2C0.21&t=tEJH5FnHTLO1arCb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1387%3A290"
     >
       <button
         class="bg-(--primary-theme-color) text-white cursor-pointer py-2.5 px-4 mb-4 font-(family-name:--subheader-font) hover:duration-200 ease-in-out hover:bg-(--primary-theme-color-hover)"
@@ -64,14 +64,181 @@
       </button></a
     >
   </div>
-  <app-paragraph-with-image
-    image="./assets/images/android.png"
-    title="Wie zijn mijn gebruikers?"
-    phase="EMPATHIZE"
-  >
+  <app-paragraph title="Belangen van de gebruikers" phase="EMPATHIZE">
     <p content class="text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua.
+      Het idee van onboarding kwam eerst vanuit mijn onderzoek voor manieren om gebruikersretentie
+      te stimuleren. Daaruit kwamen een aantal methodes naar voren, waaronder een goed ontworpen
+      onboarding. Apps die te ingewikkelde of onduidelijke instructies hadden werden snel verwijderd
+      door de gebruiker. Om dit te voorkomen, legde ik een aantal praktijken voor:
     </p>
-  </app-paragraph-with-image>
+
+    <ul content class="text pl-9 list-disc">
+      <br />
+      <li>Instructies moeten zo kort mogelijk zijn met makkelijke taal.</li>
+      <li>Leg alleen uit over de main features bij eerste gebruik van de app.</li>
+      <li>Gebruikers moeten de optie krijgen om de onboarding opnieuw te bekijken.</li>
+      <li>Vertel gebruikers over de waarde van de app en wat het kan doen voor hun.</li>
+      <li>Laat progressie in de onboarding zien, bijvoorbeeld met een voortgangsbalk.</li>
+      <br />
+    </ul>
+
+    <p content class="text">
+      Op basis van deze argumentatie was gezamenlijk besloten om onboarding te implementeren voor de
+      app. Omdat deze informatie nog gebaseerd was op algemene informatie, moesten we nog
+      onderzoeken naar mogelijke specifieke wensen vanuit de ruiters.
+    </p>
+
+    <p content class="text">
+      <br />Na het onderzoek ging ik en mijn groep dus langs bij een manege waar Enquine Integration
+      werkt. Daar werden wij geïntroduceerd met een professionele ruiter en een data-analist voor
+      een interview. Vanuit hier kreeg ik een paar belangrijke inzichten:
+    </p>
+
+    <ul content class="text pl-9 list-disc">
+      <br />
+      <li>
+        Topruiters zijn gemiddeld oudere mensen tussen de 60-70+ jaar, en zijn dus nog niet gewend
+        om technologie te gebruiken.
+      </li>
+      <li>
+        Steeds meer ruiters gebruiken telefoons tijdens hun trainingen, dus zij zijn wel bekend met
+        een paar basisfunctionaliteiten.
+      </li>
+      <li>Ruiters hebben het heel druk, en lezen dus niet graag lange teksten.</li>
+    </ul>
+
+    <p content class="text">
+      <br />Met deze informatie was het duidelijk dat onboarding noodzakelijk is voor de app.
+      Daarvoor was het dus belangrijk om makkelijk-te-begrijpen, hapbare teksten te gebruiken voor
+      de instructies.
+    </p></app-paragraph
+  >
+  <app-paragraph title="Beeld van onze doelgroep" phase="DEFINE">
+    <p content class="text">
+      Na de interview gingen wij alle inzichten over onze doelgroep overzetten in meerdere
+      overzichten. Één van de overzichten waren over de <b>pijnpunten</b> die de ruiter ervaart
+      tijdens zijn trainingen of de app.
+    </p>
+  </app-paragraph>
+  <img src="./assets/images/onboarding/painpoints.png" />
+
+  <app-paragraph>
+    <p content class="text">
+      Op basis van de gemaakte overzichten maakten wij gezamenlijk een <b>Persona</b> van een
+      typische professionele ruiter. Met deze Persona konden wij nieuwe features in de app richtten
+      op vele behoeftes voor zowel de ruiters als het paard.
+    </p>
+  </app-paragraph>
+
+  <img src="./assets/images/onboarding/persona.png" />
+
+  <app-paragraph title="Plannen voor de app" phase="IDEATE">
+    <p content class="text">
+      Als volgende stap brainstormde wij samen over alle belangen van de ruiter die we kregen van de
+      vorige fases. Daarna bespraken wij samen welke belangen geïmplementeerd moeten worden in de
+      app. Dit deden wij met behulp van een <b>MoSCOW-tabel</b>.
+    </p>
+    <p content class="text">
+      <br />
+      Van de eerdere argumentaties die ik maakte en de doelgroeponderzoek, was er besloten dat de
+      app een duidelijke onboarding moet bevatten. Er waren echter veel features bedacht die ook
+      ontwikkeld zal worden in de app. Op dit was er besloten om voor alleen eén feature een
+      onboarding te geven als voorbeeld.
+    </p>
+    <p content class="text">
+      <br />
+      Vanwege gelimiteerde tijd besloten wij om onboarding te geven voor het plaatsen van een
+      widget, waarin gebruikers meteen hun gezondheid van hun paard zien.
+    </p>
+  </app-paragraph>
+
+  <img src="./assets/images/onboarding/moscow.png" />
+
+  <app-paragraph title="Prototyping, itereren, herhaal" phase="PROTOTYPE & TESTING">
+    <p content class="text">
+      De volgende stap was het overzetten van de ideeën naar interactieve Figma prototypes. Deze
+      prototypes gebruikte ik dan om de duidelijkheid van de onboarding te testen. Hierbij ontwierp
+      ik de onboarding voor zowel Android als iOS, die verschillende processen hebben voor het
+      plaatsen van widgets.
+    </p>
+
+    <p content class="text">
+      <br />
+      Omdat ik zelf geen professionele ruiters ken die ten tijde beschikbaar waren, ging ik het
+      testen met alternatieve mensen: ouderen boven de 60+ en hobbyruiters.
+    </p>
+  </app-paragraph>
+
+  <img content src="./assets/images/onboarding/iterations-wide.png" />
+
+  <div class="p-4 bg-(--textbox) my-4 lg:p-8">
+    <app-paragraph title="Eindontwerp"> </app-paragraph>
+    <p content class="text">
+      Na vijf iteraties kwam ik uit op een onboarding die gebruikt maakt van video's in plaats van
+      statische afbeeldingen. Deze keuze was gemaakt vanuit een eerdere persoon die het prototype
+      testte, een oudere man met weinig technologische kennis. <br /><br />
+
+      Hij gaf aan dat hij de afbeeldingen onduidelijk vond, en dat het beter zou zijn als er korte
+      video's waren van het plaatsen van een widget. Zijn feedback nam ik dan op in deze laatste
+      prototype door zelf korte video's te maken voor iedere stap. Daarna testte ik deze iteratie
+      met een oudere vrouw. Hierbij gebruikte ik een A/B-test om te weten welke type onboarding het
+      makkelijkst te begrijpen was.
+    </p>
+    <p content class="text text-2xl font-bold text-(--text-toned-color)">
+      <br />
+      Van de test bleek dat de onboarding duidelijk te volgen was. Bij de A/B-test had zij ook een
+      voorkeur voor video's om te weten hoe zij een widget plaatst.
+      <br />
+      <br />
+    </p>
+    <a
+      target="_blank"
+      href="https://www.figma.com/proto/TFEfTuFxkhhAZMk5EdMPPa/Equine-Integration-Concept--Copy-?page-id=1023%3A448&node-id=1387-290&viewport=417%2C-1191%2C0.21&t=tEJH5FnHTLO1arCb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1387%3A290"
+    >
+      <button
+        class="bg-(--primary-theme-color) text-white cursor-pointer py-2.5 px-4 mb-4 font-(family-name:--subheader-font) hover:duration-200 ease-in-out hover:bg-(--primary-theme-color-hover)"
+      >
+        BEKIJK PROTOTYPE
+      </button></a
+    >
+    <img content src="./assets/images/onboarding/final-iteratie.png" />
+  </div>
+
+  <app-paragraph title="Prototype naar werkend app" phase="IMPLEMENT">
+    <p content class="text">
+      Als laatste stap begon ik met het ontwikkelen van de front-end van de onboarding in
+      <b>Flutter</b>. Vanwege tijdstekort voor development besloot ik om statische afbeeldingen te
+      gebruiken voor de onboarding, in plaats van video's. <br /><br />
+      Voor Equine Integration schreef ik daarom in een adviesrapport om de video-instructies te
+      implementeren voor hun development aan de app.
+    </p>
+
+    <div content class="flex items-center justify-center">
+      <div
+        content
+        class="bg-linear-to-t from-[#090d3b] to-[#5d5a63] p-(--card-padding) rounded-(--card-radius) h-fit"
+      >
+        <video
+          content
+          class="h-auto w-auto rounded-[calc(var(--card-radius)-var(--card-padding))] sm:h-175"
+          controls
+          muted
+        >
+          <source src="./assets/images/onboarding/onboarding.mp4" type="video/mp4" />
+          Jouw browser ondersteunt helaas geen video's.
+        </video>
+      </div>
+    </div>
+  </app-paragraph>
+
+  <div class="p-4 w-full bg-(--textbox) my-4 lg:p-8">
+    <app-paragraph title="Wat ik hiervan uithaalde...">
+      <ul content class="text">
+        <li>• Gedrevenheid bij het testen en itereren van prototypes.</li>
+        <li>• Kennis over het maken van uitgebreide testplannen.</li>
+        <li>• Basiskennis over front-end development in Flutter.</li>
+        <li>• Een tevreden klant bij Equine Integration.</li>
+      </ul>
+    </app-paragraph>
+  </div>
 </main>

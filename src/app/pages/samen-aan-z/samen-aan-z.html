@@ -4,7 +4,7 @@
     header="Nieuwssysteem voor datacollectie platform"
     image="./assets/images/samenaanz/monitor.png"
   ></app-title>
-  <app-project-details class="w-full" duur="6 maanden" >
+  <app-project-details class="w-full" duur="6 maanden">
     <ul rol>
       <li>• UI/UX-designer</li>
       <li>• Front-end developer</li>
@@ -61,7 +61,7 @@
 
   <!-- Empathize -->
   <app-paragraph-with-image
-    image="./assets/images/android.png"
+    image="./assets/images/samenaanz/patroon.png"
     title="Wie zijn de onderzoekers?"
     phase="EMPATHIZE"
   >
@@ -71,6 +71,8 @@
       prototypes te maken en itereren: <br />
       <br />
     </p>
+  </app-paragraph-with-image>
+  <app-paragraph>
     <ul content class="text">
       <li>
         • <span class="font-semibold text-base">Interviews</span>: Ik interviewde een onderzoeker
@@ -89,9 +91,8 @@
         usability testing. De feedback die ik krijg verwerk ik dan in de volgende iteratie.
       </li>
     </ul>
-  </app-paragraph-with-image>
-  <app-paragraph>
     <p content class="text">
+      <br />
       Deze patroon voerde ik vier keer uit, die ieder een duur had van een week. In deze fase kwamen
       een aantal belangrijke inzichten naar voren over de nieuwsberichten:
     </p>
@@ -111,7 +112,7 @@
     </ul>
   </app-paragraph>
   <!-- Define -->
-  <app-paragraph title="Onderzoekers in het kort" phase="DEFINE">
+  <app-paragraph title="Onderzoekers in overzichten" phase="DEFINE">
     <p content class="text">
       Ik verwerkte alle belangrijke punten van de Empathize fase in een <b>Affinity Map</b> om alle
       informatie bij elkaar te zetten. Deze categoriseerde ik dan in een aantal onderwerpen om een
@@ -151,7 +152,7 @@
   </app-paragraph>
   <img src="./assets/images/samenaanz/persona.jpg" />
   <!-- Ideate -->
-  <app-paragraph title="Ideeën, ideeën en meer ideeën" phase="IDEATE">
+  <app-paragraph title="Brainstorming voor ideeën" phase="IDEATE">
     <p content class="text">
       Na de Define-fase brainstormde ik naar ideeën voor features in de nieuwsberichtsysteem.
       Tijdens dit proces kwam ik op zoveel mogelijk ideeën voor alle benodigdheden van de eerdere
@@ -176,7 +177,7 @@
   </app-paragraph>
   <img src="./assets/images/samenaanz/moscow.png" />
   <!-- Prototype -->
-  <app-paragraph title="Zo werkt het ongeveer" phase="PROTOTYPING">
+  <app-paragraph title="Prototypes maken" phase="PROTOTYPING">
     <p content class="text">
       Met een compleet overzicht van alle features in hand, ging ik naar de volgende stap: een
       aantal van de belangrijkste features overzetten in een definitieve versie van het prototype.
@@ -251,36 +252,42 @@
 
   <!-- Testing en Implement -->
 
-  <app-paragraph title="En nu echt maken!" phase="TESTING EN IMPLEMENT">
+  <app-paragraph title="Van vormen naar code" phase="TESTING">
     <p content class="text">
       De laatste stap was het ontwikkelen van de front-end applicatie met de belangrijkste
       functionaliteiten erin. Door moeilijkheden in development door de stagiair was het echter
       helaas niet mogelijk om dit geheel te realiseren. Ook moest ik erdoor wachten totdat ik
-      eindelijk kon beginnen met ontwikkelen, wat leidde tot een krappe twee weken tijd ervoor.
+      eindelijk kon beginnen met ontwikkelen.
       <br /><br />
       Om deze redenen ging ik in de tussentijd over naar een andere taak: het testen van het
       definitieve prototype met usability tests. Hiervoor contacteerde ik een onderzoeker die ik
       eerder interviewde in de Empathize-fase.
-      <br /><br />
+    </p>
+    <p content class="text text-2xl font-bold text-(--text-toned-color)">
+      <br />
       Van de tests bleek dat het systeem duidelijk te gebruiken was. Wel had hij kleine suggesties
       voor het verbeteren van de gebruikservaring. Deze feedback beschreef ik dan in een
       adviesrapport voor de developmentteam.
-      <br /><br />
-      Toen het eindelijk zover was, begon ik met het ontwikkelen van de front-end van de
-      nieuwsberichtsysteem. Omdat ik weinig tijd had hiervoor, ontwikkelde ik alleen de
+    </p>
+  </app-paragraph>
+
+  <app-paragraph title="Eindresultaat" phase="IMPLEMENT">
+    <p content class="text">
+      Toen het zover was, begon ik gelijk met het ontwikkelen van de front-end van de
+      nieuwsberichtsysteem. Omdat ik alleen twee weken tijd had hiervoor, ontwikkelde ik alleen de
       functionaliteiten voor het maken van een nieuwsbericht.
       <br /><br />
 
       Voor development gebruikte ik
-      <b>Angular</b> en <b>Tailwind CSS</b>.
-    </p>
-  </app-paragraph>
-  <app-paragraph title="Eindresultaat">
-    <video content class="h-full w-full" controls muted>
-      <source src="./assets/images/samenaanz/video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </app-paragraph>
+      <b>Angular</b> en <b>Tailwind CSS</b>. <br />
+      <br />
+
+      <video content class="h-full w-full" controls muted>
+        <source src="./assets/images/samenaanz/video.mp4" type="video/mp4" />
+        Jouw browser ondersteunt helaas geen video's.
+      </video>
+    </p></app-paragraph
+  >
 
   <!-- Testing en Implement -->
   <div class="p-4 w-full bg-(--textbox) my-4 lg:p-8">
@@ -289,7 +296,10 @@
         <li>• Meer zelfverzekerdheid voor het alleen plannen van een project.</li>
         <li>• Verschillende manieren gevonden om een project overzichtelijk te plannen.</li>
         <li>• Effectievere methode om de Empathize-fase van Design Thinking uit te voeren.</li>
-        <li>• Een grote waardering voor Angular en Tailwind CSS.</li>
+        <li>
+          • Een grote waardering voor Angular en Tailwind CSS, waarmee ik blijf werken voor eigen
+          projecten.
+        </li>
         <li>• Een tevreden stagebedrijf.</li>
       </ul>
     </app-paragraph>
