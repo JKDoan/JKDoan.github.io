@@ -90,10 +90,7 @@
           "defaultConfiguration": "development"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "https://jkdoan.github.io/JKDoan-site/"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
